@@ -18,8 +18,20 @@
 			</thead>
 			<tbody>
                             <row>
-				<entry>somebugnumber</entry>
-				<entry>description of bug</entry>
+                                <entry>many</entry>
+                                <entry>Several upgrade bugs from 2.1.x were fixed.</entry>
+                            </row>
+                            <row>
+                                <entry>10091</entry>
+                                <entry>Volume deletion will correctly delete associated snapshots from primary storage.</entry>
+                            </row>
+                            <row>
+                                <entry>10094</entry>
+                                <entry>XenServer: HA may fail to restart some VMs when multiple hosts fail simultaneously or primary storage fails (causing multiple hosts to reboot simultaneously).</entry>
+                            </row>
+                            <row>
+                                <entry>9896</entry>
+                                <entry>KVM: Windows 2008 R2 can now attach data disks.</entry>
                             </row>
                         </tbody>
                         </tgroup>
@@ -29,26 +41,8 @@
 
         <section>
                 <title>New features in 2.2.6</title>
-                <table id="tb-226newfeat" frame="all">
-                        <title>New features in 2.2.6</title>
-                        <tgroup cols='2' align='left' colsep='1' rowsep='1'>
-                            <colspec colnum="1" colwidth="1*"/>
-                            <colspec colnum="2" colwidth="2*"/>
-                        <thead>
-                                <row>
-                                        <entry>Bug</entry>
-                                        <entry>Description</entry>
-                                </row>
-                        </thead>
-                        <tbody>
-                            <row>
-                                <entry>somebugnumber</entry>
-                                <entry>description of bug</entry>
-                            </row>
-                        </tbody>
-                        </tgroup>
-                </table>
-                <para>foo</para>
+                      
+                <para>There are no new features in 2.2.6</para>
         </section>
 
 
