@@ -6,9 +6,9 @@
 <article>
 	<xi:include href="Article_Info.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
         <xi:include href="Overview.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
-	<para>
+<!--	<para>
 		This is a test paragraph
-	</para>
+	</para> -->
 	<xi:include href="Revision_History.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
 	<index />
 </article>
