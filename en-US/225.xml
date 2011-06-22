@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8' ?>
 <!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" >
 <section>
-	<title>2.2.6</title>
-	<para>2.2.6 was released on 16 June 2011</para>
+	<title>2.2.5</title>
+	<para>2.2.5 was released on 01 June 2011</para>
 	<section>
-		<title>Issues fixed in 2.2.6</title>
-		<table id="tb-226fixed" frame="all">
-                        <title>Issues fixed in 2.2.6</title>
+		<title>Issues fixed in 2.2.5</title>
+		<table id="tb-225fixed" frame="all">
+                        <title>Issues fixed in 2.2.5</title>
 			<tgroup cols='2' align='left' colsep='1' rowsep='1'>
                             <colspec colnum="1" colwidth="1*"/>
                             <colspec colnum="2" colwidth="2*"/>
@@ -18,9 +18,33 @@
 			</thead>
 			<tbody>
                             <row>
-				<entry>somebugnumber</entry>
-				<entry>description of bug</entry>
+				<entry>9873</entry>
+				<entry>VMs are now assigned to the default security group</entry>
                             </row>
+                            <row>
+                                <entry>9891</entry>
+                                <entry>Upgrade from 2.2.3 no longer fails on usage_stats</entry>
+                            </row>
+
+                            <row>
+                                <entry>Many</entry>
+                                <entry>The upgrade from 2.2.1 to 2.2.2 followed by later version now works</entry>
+                           </row>
+                           <row>
+                               <entry>9941</entry>
+                               <entry>After upgrade to 2.2.5, the UI will now show all available volumes</entry>
+                           </row>
+                           <row>
+                               <entry>Many</entry>
+                               <entry>The detection and use of cloud.version table now works correctly. This fixes many upgrade bugs</entry>
+                           </row>
+                           <row>
+                               <entry>8990</entry>
+                               <entry>Upgrade when Augeas 0.8 is installed now works</entry>
+                           </row>
+
+
+
                         </tbody>
                         </tgroup>
                 </table>
@@ -28,28 +52,9 @@
 	</section>
 
         <section>
-                <title>New features in 2.2.6</title>
-                <table id="tb-226newfeat" frame="all">
-                        <title>New features in 2.2.6</title>
-                        <tgroup cols='2' align='left' colsep='1' rowsep='1'>
-                            <colspec colnum="1" colwidth="1*"/>
-                            <colspec colnum="2" colwidth="2*"/>
-                        <thead>
-                                <row>
-                                        <entry>Bug</entry>
-                                        <entry>Description</entry>
-                                </row>
-                        </thead>
-                        <tbody>
-                            <row>
-                                <entry>somebugnumber</entry>
-                                <entry>description of bug</entry>
-                            </row>
-                        </tbody>
-                        </tgroup>
-                </table>
-                <para>foo</para>
-        </section>
+                <title>New features in 2.2.5</title>
 
+                <para>There are no new features in 2.2.5</para>
+        </section>
 
 </section>
