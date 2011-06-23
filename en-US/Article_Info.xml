@@ -11,9 +11,11 @@
 	<edition>0</edition>
 	<pubsnumber>0</pubsnumber>
 	<abstract>
-		<para>
-			A short overview and summary of the book's subject and purpose, traditionally no more than one paragraph long. Note: the abstract will appear in the front matter of your book and will also be placed in the description field of the book's RPM spec file.
+		<para>These Release Notes provide a brief description of new features and known issues for the 2.2.6 release of Cloudstack.
+		Please read Known Issues before installing. The Installation Guide provides step by step instructions for installation.
 		</para>
+		<para>Upgrades from 2.2.0, 2.2.1, 2.2.2, 2.2.3, 2.2.4 and 2.2.5 to 2.2.6 are supported. The procedure is in the Upgrade section of this document</para>
+
 	</abstract>
 	<corpauthor>
 		<inlinemediaobject>
