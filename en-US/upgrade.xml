@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8' ?>
 <!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" >
-<section>
+<section id="sect-upgrade">
 	<title>Upgrade</title>
 	<warning><para>The CloudStack upgrade does not preserve UI customizations. Customers with customizations should save altered
 	files before applying the upgrade. Then create a script that will re-apply the changes after the upgrade. Any customizations
