@@ -2,30 +2,7 @@
 <!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" >
 <section>
 	<title>&PRODUCT; 2.2.0</title>
-	<para>&PRODUCT; 2.2.0 was released on 16 June 2011</para>
-	<section>
-		<title>Issues fixed in &PRODUCT; 2.2.0</title>
-		<table id="tb-220fixed" frame="all">
-                        <title>Issues fixed in 2.2.0</title>
-			<tgroup cols='2' align='left' colsep='1' rowsep='1'>
-                            <colspec colnum="1" colwidth="1*"/>
-                            <colspec colnum="2" colwidth="2*"/>
-                        <thead>
-				<row>
-					<entry>Bug</entry>
-					<entry>Description</entry>
-				</row>
-			</thead>
-			<tbody>
-                            <row>
-				<entry>somebugnumber</entry>
-				<entry>description of bug</entry>
-                            </row>
-                        </tbody>
-                        </tgroup>
-                </table>
-		<para>foo</para>
-	</section>
+	<para>&PRODUCT; 2.2.0 was not publicly released</para>
 
         <section>
                 <title>New features in &PRODUCT; 2.2.0</title>
@@ -41,10 +18,101 @@
                                 </row>
                         </thead>
                         <tbody>
-                            <row>
-                                <entry>somebugnumber</entry>
-                                <entry>description of bug</entry>
-                            </row>
+				<row>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=591">591</ulink></entry>
+					<entry>Virtual Machines may have multiple NICs.</entry>
+				</row>
+				<row>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=6802">6802</ulink></entry>
+					<entry>Service offerings and disk offerings may be made private to a domain.</entry>
+				</row>
+				<row>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=1974">1974</ulink></entry>
+					<entry>The Virtual Router memory may be changed.</entry>
+				</row>
+				<row>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=2461">2461</ulink></entry>
+					<entry>A user may VPN into their virtual network using IPSec/L2TP.</entry>
+				</row>
+				<row>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=3120">3120</ulink></entry>
+					<entry>1:1 NAT of public IPs is possible.</entry>
+				</row>
+				<row>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=3346">3346</ulink></entry>
+					<entry>There is a command line interface (CLI) tool for the CloudStack. It is called cloudadm. This tool is in a beta state and its syntax may change substantially in future releases.</entry>
+				</row>
+				<row>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=3386">3386</ulink></entry>
+					<entry>Zones may be dedicated to domains. This allows for hardware dedication and a higher level of isolation.</entry>
+				</row>
+				<row>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=3676">3676</ulink></entry>
+					<entry>Multiple hypervisor types may exist in the same CloudStack cloud. An individual cluster consists of nodes of the same hypervisor type.</entry>
+				</row>
+				<row>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=4286">4286</ulink></entry>
+					<entry>Templates may be extracted via HTTP download or HTTP POST.</entry>
+				</row>
+				<row>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=4774">4774</ulink></entry>
+					<entry>ISOs may be public.</entry>
+				</row>
+				<row>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=4836">4836</ulink></entry>
+					<entry>Limits may be set on a domain basis. This allows an administrator to prescribe aggregate limits that apply to a set of accounts.</entry>
+				</row>
+				<row>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=5060">5060</ulink></entry>
+					<entry>Disk offerings can have arbitrary sizes.</entry>
+				</row>
+				<row>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=5147">5147</ulink></entry>
+					<entry>Primary storage devices may be placed into a maintenance mode. Then they may be taken offline and later returned to service.</entry>
+				</row>
+				<row>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=5190">5190</ulink>,
+                                                <ulink url="http://bugs.cloud.com/show_bug.cgi?id=5191">5191</ulink></entry>
+					<entry>The URL used by the Console Proxy code and its associated SSL certificate may be configured and changed.</entry>
+				</row>
+				<row>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=5559">5559</ulink></entry>
+					<entry>Snapshots are supported for local disk storage.</entry>
+				</row>
+				<row>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=5592">5592</ulink></entry>
+					<entry>The DNS domain for guests may be configured.</entry>
+				</row>
+				<row>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=5688">5688</ulink></entry>
+					<entry>KVM CloudStack nodes now support VLANs for isolation.</entry>
+				</row>
+				<row>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=5784">5784</ulink></entry>
+					<entry>KVM CloudStack now supports snapshots.</entry>
+				</row>
+				<row>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=5800">5800</ulink></entry>
+					<entry>KVM CloudStack supports cluster functionality, analogous to vSphere and XenServer.</entry>
+				</row>
+				<row>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=6103">6103</ulink></entry>
+					<entry>The "look back period" for which the system considers a stopped VM to still be consuming resources is configurable.</entry>
+				</row>
+				<row>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=6994">6994</ulink></entry>
+					<entry>XenServer: administrators may add pre-existing SRs as primary storage to CloudStack. This enables support for FiberChannel storage.</entry>
+				</row>
+				<row>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=7871">7871</ulink></entry>
+					<entry>KVM: Shared mountpoint storage is available. This enables the use of clustered filesystems like OCFS2 as primary storage.</entry>
+				</row>
+				<row>
+					<entry>Many</entry>
+					<entry>There have been many API enhancements, including the ability to show the lineage of
+                                        a volume, show a volume's attachment time, determine a cloud's capabilities, find the
+                                        OS type of a virtual machine, search for deleted templates, and more.</entry>
+				</row>
                         </tbody>
                         </tgroup>
                 </table>
