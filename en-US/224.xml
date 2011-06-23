@@ -2,7 +2,28 @@
 <!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" >
 <section>
 	<title>2.2.4</title>
-	<para>2.2.4 was released on 16 June 2011</para>
+	<para>&PRODUCT; 2.2.4 was released on 16 May 2011</para>
+	<important>
+		<para>The behavior of storage allocation is more conservative 
+		in 2.2.4 than in 2.1.7 and prior releases or 2.2.0-2.2.3. 
+		&PRODUCT; will no longer create volumes on primary storage
+		 resources that have a storage percentage used higher than that
+		 defined by <firstterm> 
+		<indexterm><primary>storage.capacity.threshold</primary></indexterm>
+		</firstterm>
+		 global configuration. Previously &PRODUCT; would allocate a 
+		primary storage resource up to 100% full. This space reservation
+		 is required as a fix to cases where snapshots of VMs could 
+		not be taken when the storage had been allocated to 100% full. 
+		The use of a threshold setting allows the administrator to 
+		reserve space for snapshots in progress for existing volumes. 
+		Deployments with primary storage that is close to full should 
+		examine the value of this parameter before upgrading. If all 
+		primary storage resources are more full than 
+		<indexterm><primary>storage.capacity.threshold</primary></indexterm>
+		 no new volumes can be created after upgrade.
+		</para>
+	</important>
 	<section>
 		<title>Issues fixed in 2.2.4</title>
 		<table id="tb-224fixed" frame="all">
