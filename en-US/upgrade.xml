@@ -26,7 +26,7 @@
 			</listitem>
 			<listitem>
 				<para>Wait until the UI is accessible</para>
-				<note><para>If you have additional management servers you may start them after the UI is accessible</para></note>
+				<note><para>If you have additional management servers you may start them after the UI is accessible on the first management server.</para></note>
 			</listitem>
 		</orderedlist>
 		<section>
