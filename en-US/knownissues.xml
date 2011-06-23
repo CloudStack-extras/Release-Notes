@@ -35,7 +35,8 @@
 					<entry>The internationalization feature of the CloudStack is immature. Some strings have not been extracted and will still render in English.</entry>
 				</row>
 			</tbody>
-		</table>
+		</tgroup>
+	</table>
 
 
 </section>
