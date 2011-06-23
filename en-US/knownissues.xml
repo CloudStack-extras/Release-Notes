@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" >
+<section>
+	<title>Known Issues</title>
+        <table id="tb-knownissues" frame="all">
+                        <title>Known issues</title>
+                        <tgroup cols='2' align='left' colsep='1' rowsep='1'>
+                            <colspec colnum="1" colwidth="1*"/>
+                            <colspec colnum="2" colwidth="2*"/>
+                        <thead>
+                                <row>
+                                        <entry>Bug</entry>
+                                        <entry>Description</entry>
+                                </row>
+                        </thead>
+                        <tbody>
+                            <row>
+                                <entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=8105">8105</ulink></entry>
+                                <entry>KVM: NFS v4 for primary storage may not work. Use v3.</entry>
+                            </row>
+				<row>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=8076">8076</ulink></entry>
+					<entry>KVM: Unable to process quoted strings in ifcfg-eth0 when setting up the Cloudstack Agent</entry>
+				</row>
+				<row>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=8486">8486</ulink></entry>
+					<entry>XenServer: putting a host into maintenance mode will fail if some guests do not have PV drivers.</entry>
+				</row>
+				<row>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=5573">5573</ulink></entry>
+					<entry>KVM: editing the name of a Pod will revent VMs from starting.</entry>
+				</row>
+				<row>
+					<entry>many</entry>
+					<entry>The internationalization feature of the CloudStack is immature. Some strings have not been extracted and will still render in English.</entry>
+				</row>
+			</tbody>
+		</table>
+
+
+</section>
