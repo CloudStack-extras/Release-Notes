@@ -2,7 +2,7 @@
 <!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" >
 <section>
 	<title>&PRODUCT; 222</title>
-	<para>&PRODUCT; 222 was released on 16 June 2011</para>
+	<para>&PRODUCT; 222 was released on 15 March 2011</para>
 	<section>
 		<title>Issues fixed in &PRODUCT; 222</title>
 		<table id="tb-222fixed" frame="all">
@@ -17,14 +17,70 @@
 				</row>
 			</thead>
 			<tbody>
-                            <row>
-				<entry>somebugnumber</entry>
-				<entry>description of bug</entry>
-                            </row>
+                                <row>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=8614">8614</ulink></entry>
+					<entry>The storage allocator now functions correctly.</entry>
+				</row>
+                                <row>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=8865">8865</ulink></entry>
+					<entry>It is now possible to start VMs whose networks were shutdown when using 2.2.0.</entry>
+				</row>
+                                <row>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=8635">8635</ulink></entry>
+					<entry>Direct network VM creation will work correctly in the CloudStack UI wizard.</entry>
+				</row>
+                                <row>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=8514">8514</ulink></entry>
+					<entry>The OS type dropdown is correctly populated when creating a template from a volume.</entry>
+				</row>
+                                <row>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=8892">8892</ulink></entry>
+					<entry>The DNS server for guests in direct tagged networks is now set properly.</entry>
+				</row>
+                                <row>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=8912">8912</ulink></entry>
+					<entry>Password management scripts now work correctly with multiple NIC guests in all cases as well as external firewall configurations.</entry>
+				</row>
+                                <row>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=8604">8604</ulink></entry>
+					<entry>Adding a second management server works reliably.</entry>
+				</row>
+                                <row>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=7935">7935</ulink></entry>
+					<entry>There is a mechanism to bill differently for guests of different hypervisor type when the guests are started from ISO images.</entry>
+				</row>
+                                <row>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=7762">7762</ulink></entry>
+					<entry>The snapshot and volume copy logic for vSphere hosts has been moved into the Secondary Storage VM.</entry>
+				</row>
+                                <row>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=8806">8806</ulink></entry>
+					<entry>The set of hypervisors present in the cloud is now represented correctly by the API and UI.</entry>
+				</row>
+                                <row>
+					<entry>Many</entry>
+					<entry>Several bugs in HA functionality across hypervisors and storage types have been fixed.</entry>
+				</row>
+                                <row>
+					<entry>Many</entry>
+					<entry>Several bugs in internationalization and localization have been fixed.</entry>
+				</row>
+                                <row>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=8632">8632</ulink></entry>
+					<entry>The dashboard view or domain administrators is now correct.</entry>
+				</row>
+                                <row>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=8104">8104</ulink></entry>
+					<entry>If the secondary storage VM is down, booting a guest off ISO will work.</entry>
+				</row>
+                                <row>
+					<entry>Many</entry>
+					<entry>Several logging improvements have been made. Logging is less verbose in some cases and more descriptive in others.</entry>
+				</row>
                         </tbody>
                         </tgroup>
                 </table>
-		<para>foo</para>
+
 	</section>
 
         <section>
@@ -41,14 +97,26 @@
                                 </row>
                         </thead>
                         <tbody>
-                            <row>
-                                <entry>somebugnumber</entry>
-                                <entry>description of bug</entry>
-                            </row>
+                                <row>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=8349">8349</ulink></entry>
+					<entry>Routers may be listed by network ID.</entry>
+				</row>
+                                <row>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=8250">8250</ulink></entry>
+					<entry>KVM: Security groups will work with direct tagged networks.</entry>
+				</row>
+                                <row>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=8664">8664</ulink></entry>
+					<entry>A maximum page size is enforced. This limits server memory impact from large queries.</entry>
+				</row>
+                                <row>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=8263">8263</ulink></entry>
+					<entry>A domain specific zone may have its scope adjusted to be public.</entry>
+				</row>
                         </tbody>
                         </tgroup>
                 </table>
-                <para>foo</para>
+
         </section>
 
 
