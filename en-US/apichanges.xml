@@ -1,3 +1,15 @@
 <?xml version='1.0' encoding='utf-8' ?>
 <!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" >
 <section>
+	<title>API Changes</title>
+	<para>The API has had several enhancements for 2.2. There are a large number of small chages to the API. 
+		The API was significantly improved and made more consistent. As a result most applications developed
+		against the API will need to be adapted to be compatible with 2.2.
+	</para>
+	<para>2.2 API documentation is available at:</para>
+	<para>Global Admin: <ulink url="http://download.cloud.com/releases/2.2.0/api/TOC_Global_Admin.html"></ulink></para>
+	<para>Domain Admin: <ulink url="http://download.cloud.com/releases/2.2.0/api/TOC_Domain_Admin.html"></ulink></para>
+	<para>User: <ulink url="http://download.cloud.com/releases/2.2.0/api/TOC_User.html"></ulink></para>
+
+
+</section>
