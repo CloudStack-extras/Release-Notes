@@ -17,38 +17,24 @@
 				</row>
 			</thead>
 			<tbody>
-                            <row>
-				<entry>somebugnumber</entry>
-				<entry>description of bug</entry>
-                            </row>
+                                <row>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=8574">8574</ulink></entry>
+					<entry>Account deletion could fail leaving resources orphaned.</entry>
+				</row>
+				<row>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=8631">8631</ulink></entry>
+					<entry>The DHCP server would not start in the case of external firewall integration.</entry>
+				</row>
                         </tbody>
                         </tgroup>
                 </table>
-		<para>foo</para>
+		
 	</section>
 
         <section>
                 <title>New features in &PRODUCT; 2.2.1</title>
-                <table id="tb-221newfeat" frame="all">
-                        <title>New features in 2.2.1</title>
-                        <tgroup cols='2' align='left' colsep='1' rowsep='1'>
-                            <colspec colnum="1" colwidth="1*"/>
-                            <colspec colnum="2" colwidth="2*"/>
-                        <thead>
-                                <row>
-                                        <entry>Bug</entry>
-                                        <entry>Description</entry>
-                                </row>
-                        </thead>
-                        <tbody>
-                            <row>
-                                <entry>somebugnumber</entry>
-                                <entry>description of bug</entry>
-                            </row>
-                        </tbody>
-                        </tgroup>
-                </table>
-                <para>foo</para>
+                
+                <para>There are no new features in Cloudstack 2.2.1</para>
         </section>
 
 
