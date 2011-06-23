@@ -1,3 +1,60 @@
 <?xml version='1.0' encoding='utf-8' ?>
 <!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" >
 <section>
+	<title>Upgrade</title>
+	<warning>WARNING: The CloudStack upgrade does not preserve UI customizations. Customers with customizations should save altered
+	files before applying the upgrade. Then create a script that will re-apply the changes after the upgrade. Any customizations
+	should be tested on a staging environment prior to upgrade to a new version.</warning>
+	<section>
+		<title> Upgrade from 2.2.0, 2.2.1, 2.2.2, 2.2.3, 2.2.4 or 2.2.5 to 2.2.6</title>
+		<para>Perform the following to upgrade from 2.2.0, 2.2.1, 2.2.2, 2.2.3, 2.2.4 or 2.2.5 to 2.2.6.</para>
+		<orderedlist>
+			<listitem>
+				<para>Stop the Management Servers. Run this on all Management Server hosts.</para>
+				<screen><prompt>#</prompt><userinput> service cloud-management stop</userinput></screen>
+			</listitem>	
+			<listitem>
+				<para>Untar the tgz download and cd into the resulting directory. Then update the software on each
+					Management Server</para>
+				<screen><prompt>#</prompt><userinput> ./install.sh</userinput></screen>
+				<para>Choose "U" to update packages.</para>
+			</listitem>
+			<listitem>
+				<para>Start the management server</para>
+				<important>If you have multiple management servers, start only one at this point.</important>
+				<screen><prompt># </prompt><userinput>service cloud-management start</userinput></screen>
+			</listitem>
+			<listitem>
+				<para>Wait until the UI is accessible</para>
+				<note>If you have additional management servers you may start them after the UI is accessible</note>
+			</listitem>
+		</orderedlist>
+		<section>
+			<title>KVM Hosts</title>
+			<para>Additional steps are required for each KVM host. These steps should be performed after the 
+				after the Management server upgrade above. These teps will not impact running guests in the cloud.
+				These steps are required only for clouds using KVM as the hypervisor and only on the KVM hosts. 
+			</para>
+			<para>On each KVM host:</para>
+			<orderedlist>
+				<listitem>
+					<para>Copy the install tarball to each host, untar it, and cd into the resulting directory.</para>
+				</listitem>
+				<listitem>
+					<para>Stop the running agent.</para>
+					<screen><prompt># </prompt><userinput>service cloud-agent stop</userinput></screen>
+				</listitem>
+				<listitem>
+					<para>Update the agent software.</para>
+					<screen><prompt># </prompt><userinput>./install.sh</userinput></screen>
+					<para>Choose "U" to update the packages.</para>
+				</listitem>
+				<listitem>
+					<para>Start the agent.</para>
+					<screen><prompt># </prompt><userinput>service cloud-agent start</prompt>
+				</listitem>
+			</orderedlist>
+		</section>
+
+	</section>
+</section>
