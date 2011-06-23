@@ -39,119 +39,119 @@
 			</thead>
 			<tbody>
                             <row>
-				<entry>9702</entry>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=9702">9702</ulink></entry>
 				<entry>KVM: VM live migration will work reliably</entry>
                             </row>
 			    <row>
-				<entry>9152</entry>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=9152">9152</ulink></entry>
 				<entry>Space is reserved on each primary storage volume for snapshots.</entry>
 			    </row>
 			    <row>
-				<entry>8103</entry>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=8103">8103</ulink></entry>
 				<entry>Attempts to remove a host with running VMs will correctly fail.</entry>
 			    </row>
 			    <row>
-				<entry>8816</entry>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=8816">8816</ulink></entry>
 				<entry>Listing system VM IP addresses will distinguish <indexterm><primary>link local</primary></indexterm> from <indexterm><primary>private IP addresses</primary></indexterm>.</entry>
 			    </row>
 			    <row>
-				<entry>8898</entry>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=8898">8898</ulink></entry>
 				<entry>The service offering upgrade option is now always shown to users. Attempts to upgrade the service offering for a running VM will fail with a clear error message.</entry>
 			    </row>
 				<row>
-					<entry>9079</entry>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=9079">9079</ulink></entry>
 					<entry>Login problems with Safari have been fixed.</entry>
 				</row>
 				<row>
-					<entry>9087</entry>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=9087">9087</ulink></entry>
 					<entry>Attach/detach of a data disk in a multi-cluster deployment will work correctly. Previously the data disk could be deleted.</entry>
 				</row>
 				<row>
-					<entry>9140</entry>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=9140">9140</ulink></entry>
 					<entry>ISOs that are not bootable may now be uploaded</entry>
 				</row>
 				<row>
-					<entry>8955</entry>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=8955">8955</ulink></entry>
 					<entry>KVM: Userdata and instance metadata now work correctly.</entry>
 				</row>
 				<row>
-					<entry>8666</entry>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=8666">8666</ulink></entry>
 					<entry>The guest network CIDR must be a RFC1918 address.</entry>
 				</row>
 				<row>
-					<entry>8959</entry>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=8959">8959</ulink></entry>
 					<entry>Port forwarding with the virtual router will now work with IP addresses from multiple VLANs</entry>
 				</row>
 				<row>
-					<entry>9106</entry>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=9106">9106</ulink></entry>
 					<entry>The VM's metered running time is now correct</entry>
 				</row>
 				<row>
-					<entry>9369</entry>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=9369">9369</ulink></entry>
 					<entry>IP address releases will not intermittently fail</entry>
 				</row>
 				<row>
-					<entry>9370</entry>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=9370">9370</ulink></entry>
 					<entry>XenServer: the network throttling values are now correctly applied</entry>
 				</row>
 				<row>
-					<entry>8802</entry>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=8802">8802</ulink></entry>
 					<entry>Windows password management scripts work correctly in the presence of external network elements</entry>
 				</row>
 				<row>
-					<entry>8911</entry>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=8911">8911</ulink></entry>
 					<entry>A security vulnerability that allowed download of some files from the console proxy VM has been fixed</entry>
 				</row>
 				<row>
-					<entry>8954</entry>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=8954">8954</ulink></entry>
 					<entry>End users are no longer allowed access to the console of their virtual router</entry>
 				</row>
 				<row>
-					<entry>9130</entry>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=9130">9130</ulink></entry>
 					<entry>Security groups are no longer present in the UI in Advanced Networking zones</entry>
 				</row>
 				<row>
-					<entry>9192</entry>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=9192">9192</ulink></entry>
 					<entry>Performance of the listVirtualMachines API cal in the presence of many VMs has been significantly improved.</entry>
 				</row>
 				<row>
-					<entry>9663</entry>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=9663">9663</ulink></entry>
 					<entry>A security issue that could allow end users to snapshot another user's volume has been fixed</entry>
 				</row>
 				<row>
-					<entry>9243</entry>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=9243">9243</ulink></entry>
 					<entry>XenServer: a stop VM request will forcefully stop the VM even if qemu has crashed on the XenServer host</entry>
 				</row>
 				<row>
-					<entry>7723</entry>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=7723">7723</ulink></entry>
 					<entry>Host tagging now works correctly</entry>
 				</row>
 				<row>
-					<entry>7935</entry>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=7935">7935</ulink></entry>
 					<entry>Usage clients have a path to determining the OS type of a guest booted from a blank VM.</entry>
 				</row>
 				<row>
-					<entry>8532</entry>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=8532">8532</ulink></entry>
 					<entry>KVM: HA failover works correctly with OCFS2.</entry>
 				</row>
 				<row>
-					<entry>8714</entry>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=8714">8714</ulink></entry>
 					<entry>Users may again create four parallel snapshot schedules</entry>
 				</row>
 				<row>
-					<entry>9180</entry>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=9180">9180</ulink></entry>
 					<entry>XenServer: local storage now works correctly</entry>
 				</row>
 				<row>
-					<entry>9539</entry>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=9539">9539</ulink></entry>
 					<entry>CPU over-provisioning now works correctly</entry>
 				</row>
 				<row>
-					<entry>8897</entry>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=8897">8897</ulink></entry>
 					<entry>Zone delete now works correctly</entry>
 				</row>
 				<row>
-					<entry>8902</entry>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=8902">8902</ulink></entry>
 					<entry>Cluster delete now works correctly.</entry>
 				</row>
 				<row>
@@ -159,7 +159,7 @@
 					<entry>Several bugs around resource limit tracking have been fixed.</entry>
 				</row>
 				<row>
-					<entry>9093</entry>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=9093">9093</ulink></entry>
 					<entry>Firefox 4 and IE 9 are supported browsers</entry>
 				</row>
                         </tbody>
@@ -183,31 +183,31 @@
                         </thead>
                         <tbody>
                             <row>
-                                <entry>7424</entry>
+                                <entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=7424">7424</ulink></entry>
                                 <entry>Network throttling may be disabled altogether.</entry>
                             </row>
 			    <row>
-				<entry>8932</entry>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=8932">8932</ulink></entry>
 				<entry>The listTemplates API call will return an md5sum of the template.</entry>
 				</row>
 				<row>
-					<entry>3316</entry>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=3316">3316</ulink></entry>
 					<entry>Virtual machines may be manually live-migrated by the administrator. The administrator may pick a VM and the host that the VM should be placed on.</entry>
 				</row> 
 				<row>
-					<entry>8831</entry>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=8831">8831</ulink></entry>
 					<entry>A network may be dedicated to a domain. Only users in that domain and its children will have access to the network.</entry>
 				</row>
 				<row>
-					<entry>8945</entry>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=8945">8945</ulink></entry>
 					<entry>The global configuration parameter default.page.limit has been added. This sets the maximum number of results that will be returned by list* API calls. Default is 500.</entry>
 				</row>
 				<row>
-					<entry>9098</entry>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=9098">9098</ulink></entry>
 					<entry>The UI has been changed to provide clearer monitoring of snapshot progress.</entry>
 				</row>
 				<row>
-					<entry>9635</entry>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=9635">9635</ulink></entry>
 					<entry>The Java process's <indexterm><primary>heap size</primary><secondary>Java</secondary></indexterm> has been increased from 28 MB to 1024 MB</entry>
 				</row>
 				

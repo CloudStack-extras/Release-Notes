@@ -22,11 +22,11 @@
                                 <entry>Several upgrade bugs from 2.1.x were fixed.</entry>
                             </row>
                             <row>
-                                <entry>10091</entry>
+                                <entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=10091">10091</ulink></entry>
                                 <entry>Volume deletion will correctly delete associated snapshots from primary storage.</entry>
                             </row>
                             <row>
-                                <entry>10094</entry>
+                                <entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=10094">10094</ulink></entry>
                                 <entry>XenServer: HA may fail to restart some VMs when multiple hosts fail simultaneously or primary storage fails (causing multiple hosts to reboot simultaneously).</entry>
                             </row>
                             <row>
