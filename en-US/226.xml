@@ -30,13 +30,12 @@
                                 <entry>XenServer: HA may fail to restart some VMs when multiple hosts fail simultaneously or primary storage fails (causing multiple hosts to reboot simultaneously).</entry>
                             </row>
                             <row>
-                                <entry>9896</entry>
+                                <entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=9896">9896</ulink></entry>
                                 <entry>KVM: Windows 2008 R2 can now attach data disks.</entry>
                             </row>
                         </tbody>
                         </tgroup>
                 </table>
-		<para>foo</para>
 	</section>
 
         <section>

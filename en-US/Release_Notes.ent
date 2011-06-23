@@ -1,4 +1,4 @@
 <!ENTITY PRODUCT "Cloudstack">
 <!ENTITY BOOKID "Release_Notes">
 <!ENTITY YEAR "2011">
-<!ENTITY HOLDER "| You need to change the HOLDER entity in the en-US/Release_Notes.ent file |">
+<!ENTITY HOLDER "Cloud.com">

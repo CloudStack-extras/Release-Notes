@@ -169,7 +169,7 @@
 	</section>
 
         <section>
-                <title>New features in 2.2.4</title>
+                <title>New features in &PRODUCT; 2.2.4</title>
                 <table id="tb-224newfeat" frame="all">
                         <title>New features in 2.2.4</title>
                         <tgroup cols='2' align='left' colsep='1' rowsep='1'>
@@ -208,7 +208,7 @@
 				</row>
 				<row>
 					<entry>9635</entry>
-					<entry>The Java process's heap size has been increased from 28 MB to 1024 MB</entry>
+					<entry>The Java process's <indexterm><primary>heap size</primary><secondary>Java</secondary></indexterm> has been increased from 28 MB to 1024 MB</entry>
 				</row>
 				
                         </tbody>
