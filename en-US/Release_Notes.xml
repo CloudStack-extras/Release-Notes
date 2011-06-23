@@ -12,6 +12,7 @@
 	<xi:include href="222.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
 	<xi:include href="221.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
 	<xi:include href="220.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+	<xi:include href="apichanges.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
 <!--	<para>
 		This is a test paragraph
 	</para> -->
