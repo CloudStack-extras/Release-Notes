@@ -2,7 +2,7 @@
 <!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" >
 <section>
 	<title>&PRODUCT; 2.2.7</title>
-	<para>&PRODUCT; 2.2.7 was released on 16 June 2011</para>
+	<para>&PRODUCT; 2.2.7 was released on 28 June 2011</para>
 	<section>
 		<title>Issues fixed in &PRODUCT; 2.2.7</title>
 		<table id="tb-227fixed" frame="all">
@@ -18,13 +18,16 @@
 			</thead>
 			<tbody>
                             <row>
-				<entry>somebugnumber</entry>
-				<entry>description of bug</entry>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=10456">10456</ulink></entry>
+				<entry>Create template from volume will work correctly</entry>
                             </row>
+			    <row> 
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=10093">10093</ulink></entry>
+				<entry>The default security group is assigned to VMs correctly</entry>
+			    </row>
                         </tbody>
                         </tgroup>
                 </table>
-		<para>foo</para>
 	</section>
 
         <section>
@@ -42,13 +45,12 @@
                         </thead>
                         <tbody>
                             <row>
-                                <entry>somebugnumber</entry>
-                                <entry>description of bug</entry>
+                                <entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=10435">10435</ulink></entry>
+                                <entry>The VPN feature has been removed from CloudStack. We expect to make the VPN feature available again in approximately one month.</entry>
                             </row>
                         </tbody>
                         </tgroup>
                 </table>
-                <para>foo</para>
         </section>
 
 
