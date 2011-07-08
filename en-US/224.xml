@@ -24,6 +24,7 @@
 		 no new volumes can be created after upgrade.
 		</para>
 	</important>
+	<para> </para>
 	<section>
 		<title>Issues fixed in &PRODUCT; 2.2.4</title>
 		<table id="tb-224fixed" frame="all">

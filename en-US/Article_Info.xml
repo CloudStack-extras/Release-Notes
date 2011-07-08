@@ -5,13 +5,12 @@
 ]>
 <articleinfo id="arti-Release_Notes-Release_Notes">
 	<title>Release Notes</title>
-	<subtitle>short description</subtitle>
 	<productname>Cloudstack</productname>
-	<productnumber>2.2.6</productnumber>
+	<productnumber>2.2.7</productnumber>
 	<edition>0</edition>
 	<pubsnumber>0</pubsnumber>
 	<abstract>
-		<para>These Release Notes provide a brief description of new features and known issues for the 2.2.6 release of Cloudstack.
+		<para>These Release Notes provide a brief description of new features and known issues for the 2.2.7 release of Cloudstack.
 		Please read <xref linkend="sect-knownissues" /> before installing. The Installation Guide provides step by step instructions for installation.
 		</para>
 		<para>Upgrades from 2.2.0, 2.2.1, 2.2.2, 2.2.3, 2.2.4 and 2.2.5 to 2.2.6 are supported. The procedure is in the <xref linkend="sect-upgrade" /> section of this document</para>

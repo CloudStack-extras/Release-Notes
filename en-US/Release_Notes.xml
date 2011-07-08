@@ -20,6 +20,5 @@
 		This is a test paragraph
 	</para> -->
 	<xi:include href="Revision_History.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
-	<index />
 </article>
 
