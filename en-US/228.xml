@@ -170,10 +170,6 @@
 				<entry>Source IP filtering is now available in the virtual router.</entry>
                             </row>
                             <row>
-				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=8208">8208</ulink></entry>
-				<entry>The CloudStack support bare metal provisioning.  Images are placed on host disks without a hypervisor.</entry>
-                            </row>
-                            <row>
 				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=8350">8350</ulink></entry>
 				<entry>The software load balancer in the virtual router has been tuned for performance.</entry>
                             </row>
