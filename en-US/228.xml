@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8' ?>
 <!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" >
 <section>
-	<title>&PRODUCT; 2.2.6</title>
-	<para>&PRODUCT; 2.2.6 was released on 16 June 2011</para>
+	<title>&PRODUCT; 2.2.8</title>
+	<para>&PRODUCT; 2.2.8 was released on 16 June 2011</para>
 	<section>
-		<title>Issues fixed in &PRODUCT; 2.2.6</title>
-		<table id="tb-226fixed" frame="all">
-                        <title>Issues fixed in 2.2.6</title>
+		<title>Issues fixed in &PRODUCT; 2.2.8</title>
+		<table id="tb-228fixed" frame="all">
+                        <title>Issues fixed in 2.2.8</title>
 			<tgroup cols='2' align='left' colsep='1' rowsep='1'>
                             <colspec colnum="1" colwidth="1*"/>
                             <colspec colnum="2" colwidth="2*"/>
@@ -18,19 +18,118 @@
 			</thead>
 			<tbody>
                             <row>
-				<entry>somebugnumber</entry>
-				<entry>description of bug</entry>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=9866">9866</ulink></entry>
+				<entry>Copying a VHD from secondary storage now sets the size properly.</entry>
                             </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=9367">9367</ulink></entry>
+				<entry>listUsers will now return the API key and secret key.</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=9371">9371</ulink></entry>
+                                    <entry>Multiple console proxies will not be started unnecessarily.</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=9981">9981</ulink></entry>
+				<entry>The direct network behavior between XenServer and vSphere is now consistent.</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=9507">9507</ulink></entry>
+				<entry>It is now possible to create a template from a snapshot of a deleted volume.</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=9604">9604</ulink></entry>
+				<entry>Networks can now be renamed.</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=9543">9543</ulink></entry>
+				<entry>Cloud-setup-management will no longer fail with updated sudoers file.</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=8183">8183</ulink></entry>
+				<entry>sourceId and sourceType are set on volume creation.</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=9445">9445</ulink></entry>
+				<entry>Host status is set to 'Storage down' when a storage failure occurs.</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=9356">9356</ulink></entry>
+				<entry>Updating console proxy certificates works correctly.</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=9519">9519</ulink></entry>
+				<entry>A performance problem with a large number of usage events has been fixed.</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=9138">9138</ulink></entry>
+				<entry>Template limits now work correctly.</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=10513">10513</ulink></entry>
+				<entry>Disable accounts will work correctly.</entry>
+                            </row><row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=4387">4387</ulink></entry>
+				<entry>The agent protocol is more robust in the face of bad data.</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=9059">9059</ulink></entry>
+				<entry>Host detail information now considers stopped VMs.</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=9470">9470</ulink></entry>
+				<entry>Line breaks for events are now properly escaped.</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=6442">6442</ulink></entry>
+				<entry>VMs that were transitioned during an HA event will have usage information tracked properly.</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=9750">9750</ulink></entry>
+				<entry>listVolumes for the domain administrator will no longer return the virtual router's volume.</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=10228">10228</ulink></entry>
+				<entry>When a host is removed the cluster capacity will be updated correctly.</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=9959">9959</ulink></entry>
+				<entry>Special characters in passwords are handled properly in the UI.</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=9182">9182</ulink></entry>
+				<entry>Newline characters in volume detach descriptions are handled properly.</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=9920">9920</ulink></entry>
+				<entry>The SSVM properly handles a much larger amount of templates for a single user.</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=9655">9655</ulink></entry>
+				<entry>The same subnet may be made available in multiple VLANs.</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=9568">9568</ulink></entry>
+				<entry>On host restarts and in general the hosts are balanced across multiple management servers.</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=9771">9771</ulink></entry>
+				<entry>Metadata is now available at the "standard" URL location.  The previous location is still provided for backwards compatibility.</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=9828">9828</ulink></entry>
+				<entry>Metadata is recreated when the virtual router is recreated.</entry>
+                            </row>
+
                         </tbody>
                         </tgroup>
                 </table>
-		<para>foo</para>
 	</section>
 
         <section>
-                <title>New features in &PRODUCT; 2.2.6</title>
-                <table id="tb-226newfeat" frame="all">
-                        <title>New features in 2.2.6</title>
+                <title>New features in &PRODUCT; 2.2.8</title>
+                <table id="tb-228newfeat" frame="all">
+                        <title>New features in 2.2.8</title>
                         <tgroup cols='2' align='left' colsep='1' rowsep='1'>
                             <colspec colnum="1" colwidth="1*"/>
                             <colspec colnum="2" colwidth="2*"/>
@@ -41,14 +140,91 @@
                                 </row>
                         </thead>
                         <tbody>
+                            
                             <row>
-                                <entry>somebugnumber</entry>
-                                <entry>description of bug</entry>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=3224">3224</ulink></entry>
+				<entry>Multiple NFS servers may be used to provide secondary storage for a zone.</entry>
                             </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=4942">4942</ulink></entry>
+				<entry>Networking metering may be performed on direct networks.  This is in conjunction with InMon Traffic Sentinel and sFlow/NetFlow enabled switches.</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=6451">6451</ulink></entry>
+				<entry>XenServer host passwords may be changed using the CloudStack API.</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=6873">6873</ulink></entry>
+				<entry>Clusters, Pods and Zones may be put into a maintenance mode.  In this mode no new VM allocations will be made to them.  Administrators can still create VMs on this hardware.</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=7507">7507</ulink></entry>
+				<entry>KVM now supports local disk for primary storage.</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=7553">7553</ulink></entry>
+				<entry>The virtual router is now sized according to a system VM service offering.  This allows for increasing virtual hardware available to some users' routers.</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=8115">8115</ulink></entry>
+				<entry>Source IP filtering is now available in the virtual router.</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=8208">8208</ulink></entry>
+				<entry>The CloudStack support bare metal provisioning.  Images are placed on host disks without a hypervisor.</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=8350">8350</ulink></entry>
+				<entry>The software load balancer in the virtual router has been tuned for performance.</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=9828">9828</ulink></entry>
+				<entry>Metadata is recreated when the virtual router is recreated.</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=8830">8830</ulink></entry>
+				<entry>The parent template ID is provided for templates created from snapshot.  This allows for template usage tracking.</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=8901">8901</ulink></entry>
+				<entry>The CloudStack UI will give indication that a snapshot is in progress.</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=9109">9109</ulink></entry>
+				<entry>Japanese keymapping is supported for the console viewer.</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=9158">9158</ulink></entry>
+				<entry>It is now possible to list instances that are associated with a particular primary storage.</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=9250">9250</ulink></entry>
+				<entry>A new guest OS type "Other PV" is available for XenServer.  These are other types of templates that are paravirtualized.</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=9534">9534</ulink></entry>
+				<entry>In service offerings it is now possible to enforce a hard cap in CPU consumption.</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=9579">9579</ulink></entry>
+				<entry>It is now possible to add a custom DNS suffix per direct network.</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=9651">9651</ulink></entry>
+				<entry>Two cloud guest networks may be added.  Then direct networks may be associated with either network.</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=9724">9724</ulink></entry>
+				<entry>The listEvents API has been extended to allow specifying hours and minutes on queries.</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=10152">10152</ulink></entry>
+				<entry>XenServer 5.6 FP2 is supported, except when used with security groups.</entry>
+                            </row>
+
                         </tbody>
                         </tgroup>
                 </table>
-                <para>foo</para>
         </section>
 
 
