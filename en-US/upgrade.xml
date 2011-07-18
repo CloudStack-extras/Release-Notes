@@ -56,6 +56,34 @@
 				</listitem>
 			</orderedlist>
 		</section>
-
-	</section>
+		<section>
+			<title>Special steps for Ubuntu management servers</title>
+			<para>In CloudStack 2.2.7 <ulink url="http://bugs.cloud.com/show_bug.cgi?id=10343">bug 10343</ulink>
+			one of our community members alerted us to an Ubuntu-specific upgrade bug. This bug was introduced by our
+			buildsystem configuration for Ubuntu. The following steps will be necessary to successfully upgrade any 
+			version of CloudStack prior to 2.2.8.</para>
+			<orderedlist>
+				<listitem>
+					<para>Stop the management server</para>
+					<screen><prompt># </prompt><userinput>service cloud-management stop</userinput></screen>
+				</listitem>
+				<listitem>
+					<para>Change the database version</para>
+					<para>Assuming that the version which you are upgrading from is 2.2.7 open a mysql console with:</para>
+					<screen><prompt># </prompt><userinput>mysql -u root -t cloud</userinput></screen>
+					<para>Once connected execute: </para>
+					<screen><userinput>update version set version='<replaceable>2.2.7</replaceable>' where id=1;</userinput></screen>
+				
+				</listitem>
+				<listitem>
+					<para>Upgrade the management server.</para>
+					<para>This will require manually installing cloud-agent-deps.</para>
+					<screen><prompt># </prompt><userinput>dpkg -i --force-overwrite oss/cloud-agent-deps_<replaceable>version_of_2.2.8_</replaceable>amd64.deb</userinput></screen>
+				</listitem>
+				<listitem>
+					<para>You can now run ./install.sh on the managment server and select 'U'. The management server will automatically start and upgrade the database.</para>
+				</listitem>
+			</orderedlist>	
+</section>	
+</section>
 </section>
