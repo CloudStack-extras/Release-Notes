@@ -11,13 +11,12 @@
 				<revnumber>0-0</revnumber>
 				<date>Fri Jun 17 2011</date>
 				<author>
-					<firstname>Dude</firstname>
-					<surname>McPants</surname>
-					<email>Dude.McPants@example.com</email>
+					<firstname>CloudStack</firstname>
+					<surname>Community</surname>
 				</author>
 				<revdescription>
 					<simplelist>
-						<member>Initial creation of book by publican</member>
+						<member>Initial conversion of book to publican</member>
 					</simplelist>
 				</revdescription>
 			</revision>
