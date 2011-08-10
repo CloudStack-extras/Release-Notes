@@ -2,7 +2,7 @@
 <!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" >
 <section>
 	<title>&PRODUCT; 2.2.9</title>
-	<para>&PRODUCT; 2.2.9 was released on 16 June 2011</para>
+	<para>&PRODUCT; 2.2.9 - OSS was not released due to a number of install bugs discovered post-release.</para>
 	<section>
 		<title>Issues fixed in &PRODUCT; 2.2.9</title>
 		<table id="tb-229fixed" frame="all">
@@ -29,26 +29,7 @@
 
         <section>
                 <title>New features in &PRODUCT; 2.2.9</title>
-                <table id="tb-229newfeat" frame="all">
-                        <title>New features in 2.2.9</title>
-                        <tgroup cols='2' align='left' colsep='1' rowsep='1'>
-                            <colspec colnum="1" colwidth="1*"/>
-                            <colspec colnum="2" colwidth="2*"/>
-                        <thead>
-                                <row>
-                                        <entry>Bug</entry>
-                                        <entry>Description</entry>
-                                </row>
-                        </thead>
-                        <tbody>
-                            <row>
-                                <entry>somebugnumber</entry>
-                                <entry>description of bug</entry>
-                            </row>
-                        </tbody>
-                        </tgroup>
-                </table>
-                <para>foo</para>
+                <para>There are no new features in CloudStack 2.2.9</para>
         </section>
 
 
