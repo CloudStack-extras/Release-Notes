@@ -18,9 +18,22 @@
 			</thead>
 			<tbody>
                             <row>
-				<entry>somebugnumber</entry>
-				<entry>description of bug</entry>
+                                <entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=10714">10714</ulink></entry>
+                                <entry>A limitation on the number of templates per zone (roughly 300) has been removed.</entry>
                             </row>
+                            <row>	
+                                <entry>many</entry>
+                                <entry>CloudStack has seen significant performance improvement that now allows it to manage up to 20,000 physical hosts.</entry>
+                            </row>
+                            <row>
+                                <entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=10681">10681</ulink></entry>
+                                <entry> If a secondary storage unmount fails, the CloudStack will no longer delete secondary storage contents</entry>
+                            </row>
+                            <row>
+                                <entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=10929">10929</ulink></entry>
+                                <entry>Under some error circumstances, it was possible for VMs to transition to the Error state incorrectly.  This could lead to the erroneous deletion of the VMs.  This has been fixed.</entry>
+                            </row>
+
                         </tbody>
                         </tgroup>
                 </table>
