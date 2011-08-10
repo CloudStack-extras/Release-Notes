@@ -44,10 +44,6 @@
 					<entry>The download volume function is unreliable.</entry>
 				</row>
                                 <row>
-                                        <entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=10714">10714</ulink></entry>
-                                        <entry>There is a limit on the number of active templates allowed per Zone. This limit is approximately 250. Customers should check the number of templates per Zone before upgrading.</entry>
-                                </row>
-                                <row>
                                         <entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=10507">10507</ulink></entry>
                                         <entry>The SSVM does not get assigned a route to the internal DNS server.</entry>
                                 </row>
