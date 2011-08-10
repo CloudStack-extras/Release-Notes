@@ -7,8 +7,8 @@
 	should be tested on a staging environment prior to upgrade to a new version.</para></warning>
 	<para> </para>
 	<section>
-		<title> Upgrade from 2.2.0, 2.2.1, 2.2.2, 2.2.3, 2.2.4 or 2.2.5 to 2.2.6</title>
-		<para>Perform the following to upgrade from 2.2.0, 2.2.1, 2.2.2, 2.2.3, 2.2.4 or 2.2.5 to 2.2.6.</para>
+		<title> Upgrade from 2.2.0, 2.2.1, 2.2.2, 2.2.3, 2.2.4, 2.2.5, 2.2.6, 2.2.7, or 2.2.8 to 2.2.9</title>
+		<para>Perform the following to upgrade from 2.2.0, 2.2.1, 2.2.2, 2.2.3, 2.2.4, 2.2.5, 2.2.6, 2.2.7 or 2.2.8 to 2.2.9.</para>
 		<orderedlist>
 			<listitem>
 				<para>Stop the Management Servers. Run this on all Management Server hosts.</para>
