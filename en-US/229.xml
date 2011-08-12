@@ -33,6 +33,10 @@
                                 <entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=10929">10929</ulink></entry>
                                 <entry>Under some error circumstances, it was possible for VMs to transition to the Error state incorrectly.  This could lead to the erroneous deletion of the VMs.  This has been fixed.</entry>
                             </row>
+			    <row>
+				<entry>N/A</entry>
+				<entry>VPN functionality which was removed in CloudStack 2.2.7 has been restored.</entry>
+			    </row>
 
                         </tbody>
                         </tgroup>
