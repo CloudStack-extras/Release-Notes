@@ -2,7 +2,7 @@
 <!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" >
 <section>
 	<title>&PRODUCT; 2.2.9</title>
-	<para>&PRODUCT; 2.2.9 - OSS was not released due to a number of install bugs discovered post-release.</para>
+	<para>&PRODUCT; 2.2.9 was released on 17 August 2011.</para>
 	<section>
 		<title>Issues fixed in &PRODUCT; 2.2.9</title>
 		<table id="tb-229fixed" frame="all">

@@ -5,7 +5,7 @@
 	<para>&PRODUCT; 2.2.8 was released on 16 June 2011</para>
 	<section>
 		<title>Issues fixed in &PRODUCT; 2.2.8</title>
-		<table id="tb-228fixed" frame="all">
+		<table frame="all">
                         <title>Issues fixed in 2.2.8</title>
 			<tgroup cols='2' align='left' colsep='1' rowsep='1'>
                             <colspec colnum="1" colwidth="1*"/>
@@ -128,7 +128,7 @@
 
         <section>
                 <title>New features in &PRODUCT; 2.2.8</title>
-                <table id="tb-228newfeat" frame="all">
+                <table frame="all">
                         <title>New features in 2.2.8</title>
                         <tgroup cols='2' align='left' colsep='1' rowsep='1'>
                             <colspec colnum="1" colwidth="1*"/>
