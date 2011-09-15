@@ -2,7 +2,7 @@
 <!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" >
 <section>
 	<title>&PRODUCT; 2.2.11</title>
-	<para>&PRODUCT; 2.2.11 was released on 16 June 2011</para>
+	<para>&PRODUCT; 2.2.11 was not released to the open source community</para>
 	<section>
 		<title>Issues fixed in &PRODUCT; 2.2.11</title>
 		<table id="tb-2211fixed" frame="all">
@@ -18,37 +18,18 @@
 			</thead>
 			<tbody>
                             <row>
-				<entry>somebugnumber</entry>
-				<entry>description of bug</entry>
+				<entry>n/a</entry>
+				<entry>remedy a bug fixed in 2.2.11 that caused some system VMs to not start after upgrades</entry>
                             </row>
                         </tbody>
                         </tgroup>
                 </table>
-		<para>foo</para>
 	</section>
 
         <section>
                 <title>New features in &PRODUCT; 2.2.11</title>
-                <table id="tb-2211newfeat" frame="all">
-                        <title>New features in 2.2.11</title>
-                        <tgroup cols='2' align='left' colsep='1' rowsep='1'>
-                            <colspec colnum="1" colwidth="1*"/>
-                            <colspec colnum="2" colwidth="2*"/>
-                        <thead>
-                                <row>
-                                        <entry>Bug</entry>
-                                        <entry>Description</entry>
-                                </row>
-                        </thead>
-                        <tbody>
-                            <row>
-                                <entry>somebugnumber</entry>
-                                <entry>description of bug</entry>
-                            </row>
-                        </tbody>
-                        </tgroup>
-                </table>
-                <para>foo</para>
+
+                <para>There are no new features in 2.2.11.</para>
         </section>
 
 
