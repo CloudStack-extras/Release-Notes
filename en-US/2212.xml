@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8' ?>
 <!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" >
 <section>
-	<title>&PRODUCT; 2.2.11</title>
-	<para>&PRODUCT; 2.2.11 was not released as binaries to the open source community</para>
+	<title>&PRODUCT; 2.2.12</title>
+	<para>&PRODUCT; 2.2.12 was not released as binaries to the open source community</para>
 	<section>
-		<title>Issues fixed in &PRODUCT; 2.2.11</title>
-		<table id="tb-2211fixed" frame="all">
-                        <title>Issues fixed in 2.2.11</title>
+		<title>Issues fixed in &PRODUCT; 2.2.12</title>
+		<table id="tb-2212fixed" frame="all">
+                        <title>Issues fixed in 2.2.12</title>
 			<tgroup cols='2' align='left' colsep='1' rowsep='1'>
                             <colspec colnum="1" colwidth="1*"/>
                             <colspec colnum="2" colwidth="2*"/>
@@ -18,8 +18,88 @@
 			</thead>
 			<tbody>
                             <row>
-				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11316">11316</ulink></entry>
-				<entry>remedy a bug fixed in 2.2.11 that caused some system VMs to not start after upgrades</entry>
+				<entry>many</entry>
+				<entry>Management Server and Usage Server can now be successfully installed on Ubuntu.</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11225">11225</ulink></entry>
+				<entry>Resolved a bug that prevented VMs from being launched the first time.</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11404">11404</ulink></entry>
+				<entry>Management Server more gracefully handles VMs stuck in states caused by external issues (such as Management Server rebooting while VM was starting, etc.).</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11438">11438</ulink></entry>
+				<entry>API: The “hypervisor” parameter is no longer required in the DeployVirtualMachine command.</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11468">11468</ulink></entry>
+				<entry>Duplicate root administrator accounts are no longer created as part of the initial installation process. Root admins can now log in successfully.</entry>
+                            </row>
+                            <row>
+				<entry>many</entry>
+				<entry>Management Server correctly ensures the deletion of resources once an account has been removed.</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11036">11036</ulink></entry>
+				<entry>Resource counting is more reliable.</entry>
+                            </row>
+                            <row>
+				<entry>many</entry>
+				<entry>Security groups propagation has been refactored to improve both performance and scalability when processing large numbers of rules.</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11275">11275</ulink></entry>
+				<entry>Compute nodes can reconnect to a cluster as long as a single primary storage is active.</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11425">11425</ulink></entry>
+				<entry>Direct IP Addresses are no longer counted as part of the public IP address resource total.</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11518">11518</ulink></entry>
+				<entry>The password reset feature works after restarting network.</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=10528">10528</ulink></entry>
+				<entry>Templates created from a VM are deployable even if the original VM has been expunged.</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=10986">10986</ulink></entry>
+				<entry>vSphere: Copying templates across zones works properly.</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11134">11134</ulink></entry>
+				<entry>vSphere: Both host and storage maintenance mode properly stop the VM on vSphere when applicable.</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11246">11246</ulink></entry>
+				<entry>API: ID is returned by the createLoadBalancerRule command.</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11515">11515</ulink></entry>
+				<entry>vSphere: Port Forwarding and Load Balancer rules are not cleared when VPN is disabled.</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=10974">10974</ulink></entry>
+				<entry>Searching for system VM or virtual appliances in the UI works.</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11190">11190</ulink></entry>
+				<entry>The ability to use the value -1 to indicate an "unlimited" resource limit has been restored.</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11331">11331</ulink></entry>
+				<entry>Zone VLAN range can be extended.</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11372">11372</ulink></entry>
+				<entry>HAProxy can listen on multiple interfaces as configured.</entry>
+                            </row>
+                            <row>
+				<entry>many</entry>
+				<entry>Improved KVM stability</entry>
                             </row>
                         </tbody>
                         </tgroup>
@@ -27,9 +107,9 @@
 	</section>
 
         <section>
-                <title>New features in &PRODUCT; 2.2.11</title>
+                <title>New features in &PRODUCT; 2.2.12</title>
 
-                <para>There are no new features in 2.2.11.</para>
+                <para>There are no new features in 2.2.12.</para>
         </section>
 
 
