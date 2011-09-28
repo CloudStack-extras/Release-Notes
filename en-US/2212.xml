@@ -109,7 +109,37 @@
         <section>
                 <title>New features in &PRODUCT; 2.2.12</title>
 
-                <para>There are no new features in 2.2.12.</para>
+                <table id="tb-2212newfeat" frame="all">
+                        <title>New features in 2.2.12</title>
+                        <tgroup cols='2' align='left' colsep='1' rowsep='1'>
+                            <colspec colnum="1" colwidth="1*"/>
+                            <colspec colnum="2" colwidth="2*"/>
+                        <thead>
+                                <row>
+                                        <entry>Bug</entry>
+                                        <entry>Description</entry>
+                                </row>
+                        </thead>
+                        <tbody>
+                            <row>
+                                <entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=8966">8966</ulink></entry>
+                                <entry>Preview release of Oracle VM support (OVM)</entry>
+                            </row>
+                            <row>
+                                <entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=7871">7871</ulink>, <ulink url="http://bugs.cloud.com/show_bug.cgi?id=10952">10952</ulink></entry>
+                                <entry>Preview release of OCFS2 support as Primary Storage</entry>
+                            </row>
+                            <row>
+                                <entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=10695">10695</ulink>, <ulink url="http://bugs.cloud.com/show_bug.cgi?id=10952">10952</ulink></entry>
+                                <entry>Support for XCP 1.0</entry>
+                            </row>
+                            <row>
+                                <entry>many</entry>
+                                <entry>This is the first release of CloudStack with the former Service Provider and Enterprise features merged into what is now the single, open source body of code</entry>
+                            </row>
+                        </tbody>
+                </tgroup>
+                </table>
         </section>
 
 
