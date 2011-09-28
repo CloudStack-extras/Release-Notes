@@ -130,7 +130,7 @@
                                 <entry>Preview release of OCFS2 support as Primary Storage</entry>
                             </row>
                             <row>
-                                <entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=10695">10695</ulink>, <ulink url="http://bugs.cloud.com/show_bug.cgi?id=10952">10952</ulink></entry>
+                                <entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=10695">10695</ulink></entry>
                                 <entry>Support for XCP 1.0</entry>
                             </row>
                             <row>
