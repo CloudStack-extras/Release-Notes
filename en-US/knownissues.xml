@@ -15,6 +15,34 @@
                         </thead>
                         <tbody>
                             <row>
+                                <entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11540">11540</ulink></entry>
+                                <entry>Use of XenServer in Basic Networking can cause Management Server to stop responding.</entry>
+                            </row>
+                            <row>
+                                <entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11545">11545</ulink></entry>
+                                <entry>It takes approximately 10 minutes for general HA to occur for a VM.</entry>
+                            </row>
+                            <row>
+                                <entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11552">11552</ulink></entry>
+                                <entry>HA does not work for XenServer 5.6 SP2.</entry>
+                            </row>
+                            <row>
+                                <entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11563">11563</ulink></entry>
+                                <entry>Unable to download the ROOT disk volume of a VM.</entry>
+                            </row>
+                            <row>
+                                <entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11476">11476</ulink></entry>
+                                <entry>On management server restart, disconnected hosts will not reconnect immediately. After a delay of a few minutes, they will reconnect.</entry>
+                            </row>
+                            <row>
+                                <entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11477">11477</ulink></entry>
+                                <entry>Cloudstack does not properly clean up VDI when VMs failed to be deployed properly.</entry>
+                            </row>
+                            <row>
+                                <entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11428">11428</ulink></entry>
+                                <entry>Unable to attach a disk volume created from a ROOT snapshot to a VM.</entry>
+                            </row>
+                            <row>
                                 <entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=8105">8105</ulink></entry>
                                 <entry>KVM: NFS v4 for primary storage may not work. Use v3.</entry>
                             </row>
