@@ -39,6 +39,11 @@
 				<para>Wait until the UI is accessible</para>
 				<note><para>If you have additional management servers you may start them after the UI is accessible on the first management server.</para></note>
 			</listitem>
+			<listitem>
+				<para> Restart the usage server</para>
+				<note><para>The usage server is newly included as F/LOSS 2.2.12, so it would need to be installed for the following step to be necessary.</para></note>
+				<screen><prompt># </prompt><userinput>service cloud-usage start</userinput></screen>
+			</listitem>
 		</orderedlist>
 		<section>
 			<title>KVM Hosts</title>
