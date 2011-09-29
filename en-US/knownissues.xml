@@ -36,7 +36,7 @@
                             </row>
                             <row>
                                 <entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11477">11477</ulink></entry>
-                                <entry>Cloudstack does not properly clean up VDI when VMs failed to be deployed properly.</entry>
+                                <entry>CloudStack does not properly clean up VDI when VMs failed to be deployed properly.</entry>
                             </row>
                             <row>
                                 <entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11428">11428</ulink></entry>
@@ -48,7 +48,7 @@
                             </row>
 				<row>
 					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=8076">8076</ulink></entry>
-					<entry>KVM: Unable to process quoted strings in ifcfg-eth0 when setting up the Cloudstack Agent</entry>
+					<entry>KVM: Unable to process quoted strings in ifcfg-eth0 when setting up the CloudStack Agent</entry>
 				</row>
 				<row>
 					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=8486">8486</ulink></entry>

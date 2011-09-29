@@ -1,8 +1,10 @@
-This is the Cloudstack Release notes. 
+This is the CloudStack Release notes. 
 It's written in DocBook XML and uses publican to build the document into human readable format. 
 
 To use publican see: https://fedorahosted.org/publican/
 
-To build this document you will also need the publican-clouddotcom brand package or you will need to change brand value in publican.cfg to brand: common 
+To build this document you will also need the publican-cloudstack brand package or you will need to change brand value in publican.cfg to brand: common 
+You can find the publican-cloudstack brand at: http://github.com/CloudStack/publican-cloudstack
+
 
 

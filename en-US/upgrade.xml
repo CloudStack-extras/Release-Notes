@@ -23,7 +23,14 @@
 				even in test upgrades. If there is an issue this will assist with debugging.</para>
 				<screen><prompt># </prompt><userinput>mysqldump cloud > cloud_backup.dmp</userinput></screen>
 				<para>If you have a usage database already also perform: </para>
-				<screen><prompt># </prompt><userinput>mysqldump cloud_usage > cloud_usage_backup.dmp</userinput></screen>			     </listitem>
+				<screen><prompt># </prompt><userinput>mysqldump cloud_usage > cloud_usage_backup.dmp</userinput></screen>
+			</listitem>
+			<listitem>
+				<para>Due to the merge of the formerly-proprietary codebase into F/LOSS, you'll need to connect to the mysql cloud database and make a manual update</para>
+				<screen><prompt>mysql> </prompt><userinput>UPDATE networks SET guru_name='ExternalGuestNetworkGuru' WHERE guru_name='GuestNetworkGuru';</userinput></screen>
+				<screen><prompt>mysql> </prompt><userinput>UPDATE nics SET reserver_name='ExternalGuestNetworkGuru' WHERE reserver_name='GuestNetworkGuru';</userinput></screen>
+				<important><para>Failure to complete this step will result in the software routers failing to restart properly.</para></important>
+			</listitem>
 			<listitem>
 				<para>Untar the tgz download and cd into the resulting directory. Then update the software on each
 					Management Server</para>
