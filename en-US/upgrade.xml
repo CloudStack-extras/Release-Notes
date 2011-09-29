@@ -7,13 +7,23 @@
 	should be tested on a staging environment prior to upgrade to a new version.</para></warning>
 	<para> </para>
 	<section>
-		<title> Upgrade from 2.2.0, 2.2.1, 2.2.2, 2.2.3, 2.2.4, 2.2.5, 2.2.6, 2.2.7, or 2.2.8 to 2.2.9</title>
-		<para>Perform the following to upgrade from 2.2.0, 2.2.1, 2.2.2, 2.2.3, 2.2.4, 2.2.5, 2.2.6, 2.2.7 or 2.2.8 to 2.2.9.</para>
+		<title> Upgrade from 2.2.0, 2.2.1, 2.2.2, 2.2.3, 2.2.4, 2.2.5, 2.2.6, 2.2.7, 2.2.8 or 2.2.9 to 2.2.12</title>
+		<para>Perform the following to upgrade from 2.2.0, 2.2.1, 2.2.2, 2.2.3, 2.2.4, 2.2.5, 2.2.6, 2.2.7, 2.2.8 or 2.2.9 to 2.2.12.</para>
 		<orderedlist>
+			<listitem>
+				<para>Stop all Usage Servers if running. Run this on all Usage Server hosts.</para>
+				<screen><prompt>#</prompt><userinput> service cloud-usage stop</userinput></screen>
+			</listitem>
 			<listitem>
 				<para>Stop the Management Servers. Run this on all Management Server hosts.</para>
 				<screen><prompt>#</prompt><userinput> service cloud-management stop</userinput></screen>
-			</listitem>	
+			</listitem>
+			<listitem>
+				<para>On the MySQL master take a backup of the MySQL databasies. We recommend performing this step
+				even in test upgrades. If there is an issue this will assist with debugging.</para>
+				<screen><prompt># </prompt><userinput>mysqldump cloud > cloud_backup.dmp</userinput></screen>
+				<para>If you have a usage database already also perform: </para>
+				<screen><prompt># </prompt><userinput>mysqldump cloud_usage > cloud_usage_backup.dmp</userinput></screen>			     </listitem>
 			<listitem>
 				<para>Untar the tgz download and cd into the resulting directory. Then update the software on each
 					Management Server</para>
