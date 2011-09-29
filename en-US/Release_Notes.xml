@@ -22,9 +22,5 @@
 	<xi:include href="apichanges.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
 	<xi:include href="knownissues.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />	
 	<xi:include href="upgrade.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />			
-<!--	<para>
-		This is a test paragraph
-	</para> -->
-	<xi:include href="Revision_History.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
 </article>
 
