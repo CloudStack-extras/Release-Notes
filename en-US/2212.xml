@@ -2,7 +2,7 @@
 <!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" >
 <section>
 	<title>&PRODUCT; 2.2.12</title>
-	<para>&PRODUCT; 2.2.12 was not released as binaries to the open source community</para>
+	<para>&PRODUCT; 2.2.12 was released on September 29, 2011</para>
 	<section>
 		<title>Issues fixed in &PRODUCT; 2.2.12</title>
 		<table id="tb-2212fixed" frame="all">
