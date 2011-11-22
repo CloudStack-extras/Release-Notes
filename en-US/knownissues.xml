@@ -15,41 +15,35 @@
                         </thead>
                         <tbody>
                             <row>
-                                <entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11540">11540</ulink></entry>
-                                <entry>Use of XenServer in Basic Networking can cause Management Server to stop responding.</entry>
+                                <entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11955">11955</ulink></entry>
+                                <entry>Ubuntu 10.04 PV and HVM do not work properly after SP2 upgrade.</entry>
                             </row>
                             <row>
-                                <entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11545">11545</ulink></entry>
-                                <entry>It takes approximately 10 minutes for general HA to occur for a VM.</entry>
+                                <entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11955">11955</ulink></entry>
+                                <entry>CentOS 5.5 HVM with either “Other Linux 64-bit” or “Centos 5.5 64-bit” as the guest OS support does not work properly after SP2 upgrade.</entry>
                             </row>
                             <row>
-                                <entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11552">11552</ulink></entry>
-                                <entry>HA does not work for XenServer 5.6 SP2.</entry>
-                            </row>
-                            <row>
-                                <entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11563">11563</ulink></entry>
-                                <entry>Unable to download the ROOT disk volume of a VM.</entry>
-                            </row>
-                            <row>
-                                <entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11476">11476</ulink></entry>
-                                <entry>On management server restart, disconnected hosts will not reconnect immediately. After a delay of a few minutes, they will reconnect.</entry>
+                                <entry>Many</entry>
+                                <entry>When using the OVM hypervisor the following functionality is not yet supported:
+                                    <orderedlist>
+                                        <listitem>Snapshots</listitem>
+                                        <listitem>System VMs must run on XenServer/KVM/VMware, not OVM</listitem>
+                                        <listitem>Security Groups on Basic Networking</listitem>
+                                        <listitem>Network Throttling</listitem>
+                                        <listitem>FibreChannel on primary storage</listitem>
+                                    </orderedlist>
+                                </entry>
                             </row>
                             <row>
                                 <entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11477">11477</ulink></entry>
                                 <entry>CloudStack does not properly clean up VDI when VMs failed to be deployed properly.</entry>
                             </row>
-                            <row>
-                                <entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11428">11428</ulink></entry>
-                                <entry>Unable to attach a disk volume created from a ROOT snapshot to a VM.</entry>
-                            </row>
+
                             <row>
                                 <entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=8105">8105</ulink></entry>
                                 <entry>KVM: NFS v4 for primary storage may not work. Use v3.</entry>
                             </row>
-				<row>
-					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=8076">8076</ulink></entry>
-					<entry>KVM: Unable to process quoted strings in ifcfg-eth0 when setting up the CloudStack Agent</entry>
-				</row>
+
 				<row>
 					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=8486">8486</ulink></entry>
 					<entry>XenServer: putting a host into maintenance mode will fail if some guests do not have PV drivers.</entry>
@@ -67,14 +61,8 @@
                                             <ulink url="http://bugs.cloud.com/show_bug.cgi?id=9912">9912</ulink></entry>
                                     <entry>Basic mode networking: if the Secondary Storage VM's private and public IP ranges are in the same subnet the SSVM will not function properly.</entry>
                                 </row>
-				<row>
-					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=10624">10624</ulink></entry>
-					<entry>The download volume function is unreliable.</entry>
-				</row>
-                                <row>
-                                        <entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=10507">10507</ulink></entry>
-                                        <entry>The SSVM does not get assigned a route to the internal DNS server.</entry>
-                                </row>
+
+
 			</tbody>
 		</tgroup>
 	</table>
