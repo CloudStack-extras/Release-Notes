@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8' ?>
 <!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" >
 <section>
-	<title>&PRODUCT; 2.2.6</title>
-	<para>&PRODUCT; 2.2.6 was released on 16 June 2011</para>
+	<title>&PRODUCT; 2.2.13</title>
+	<para>&PRODUCT; 2.2.13 was released on 16 June 2011</para>
 	<section>
-		<title>Issues fixed in &PRODUCT; 2.2.6</title>
-		<table id="tb-226fixed" frame="all">
-                        <title>Issues fixed in 2.2.6</title>
+		<title>Issues fixed in &PRODUCT; 2.2.13</title>
+		<table id="tb-2213fixed" frame="all">
+                        <title>Issues fixed in 2.2.13</title>
 			<tgroup cols='2' align='left' colsep='1' rowsep='1'>
                             <colspec colnum="1" colwidth="1*"/>
                             <colspec colnum="2" colwidth="2*"/>
@@ -18,9 +18,177 @@
 			</thead>
 			<tbody>
                             <row>
-				<entry>somebugnumber</entry>
-				<entry>description of bug</entry>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=10294">10294</ulink></entry>
+				<entry>Guest OS preference for host can now be set back to “None”.</entry>
                             </row>
+
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11169">11169</ulink></entry>
+				<entry>Allow system VMs to be recreate-able if using local storage and the associated hypervisor node is under maintenance mode.</entry>
+                            </row>
+
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11181">11181</ulink></entry>
+				<entry>Improved performance on the listVirtualMachine API call.</entry>
+                            </row>
+
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11191">11191</ulink></entry>
+				<entry>Disable rp_filter for virtual router on additional vNic(s) that are created per public VLAN.</entry>
+                            </row>
+
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11336">11336</ulink></entry>
+				<entry>Improved performance and scalability when adding security group rules with large number of CIDRs.</entry>
+                            </row>
+
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11428">11428</ulink></entry>
+				<entry>vSphere: Data disks can now be attached to VMs created from snapshots of root disk volumes.</entry>
+                            </row>
+
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11476">11476</ulink></entry>
+				<entry>On management server restart, disconnected hosts will reconnect without delay.</entry>
+                            </row>
+
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11531">11531</ulink>,
+                                    <ulink url="http://bugs.cloud.com/show_bug.cgi?id=11624">11624</ulink>
+                                </entry>
+				<entry>vSphere: Fixed issues preventing the creation of concurrent snapshots.</entry>
+                            </row>
+
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11545">11545</ulink></entry>
+				<entry>General HA for a VM now occurs in a timely fashion.</entry>
+                            </row>
+
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11592">11592</ulink></entry>
+				<entry>HA now works properly on XenServer 5.6 SP2.</entry>
+                            </row>
+
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11563">11563</ulink></entry>
+				<entry>Can download the ROOT disk volume of a VM.</entry>
+                            </row>
+
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11583">11583</ulink></entry>
+				<entry>KVM: Virtual Router will now work with multiple public VLANs.</entry>
+                            </row>
+
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11600">11600</ulink></entry>
+				<entry>KVM: Virtual Router will now work with multiple public VLANs.</entry>
+                            </row>
+
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11617">11617</ulink></entry>
+				<entry>VM deployment will now consider cluster aggregate capacity rather than simply first-fit host.</entry>
+                            </row>
+
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11625">11625</ulink></entry>
+				<entry>remedy a bug fixed in 2.2.11 that caused some system VMs to not start after upgrades</entry>
+                            </row>
+
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11629">11629</ulink></entry>
+				<entry>Snapshots on secondary storage are now being properly cleaned up after it has been deleted on the management server.</entry>
+                            </row>
+
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11664">11664</ulink></entry>
+				<entry>listVirtualMachine API will now return the name and instance name (generated by CS).</entry>
+                            </row>
+
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11669">11669</ulink></entry>
+				<entry>KVM: Network usage is now properly returned.</entry>
+                            </row>
+
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11709">11709</ulink></entry>
+				<entry>getVMPassword will now return the correct VM password.</entry>
+                            </row>
+
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11770">11770</ulink></entry>
+				<entry>Events will now be properly returned even if the associated account has been removed.</entry>
+                            </row>
+
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11774">11774</ulink></entry>
+				<entry>vSphere: Centos 5.4 64-bit OS type is now mapped correctly.</entry>
+                            </row>
+
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11778">11778</ulink></entry>
+				<entry>Port Forwarding rules are now properly cleaned up after releasing an IP.</entry>
+                            </row>
+
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11791">11791</ulink></entry>
+				<entry>Windows 2003 can now be properly created on Xenserver.</entry>
+                            </row>
+
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11796">11796</ulink></entry>
+				<entry>Network Usage thread no longer exists on an XMLRpcException</entry>
+                            </row>
+
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11835">11835</ulink></entry>
+				<entry>Firewall rules will no longer error out if they have already been physically removed on the Virtual Router but CS DB says otherwise.</entry>
+                            </row>
+
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11860">11860</ulink></entry>
+				<entry>F5 network usage reporting has been fixed to support large network usage.</entry>
+                            </row>
+
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11910">11910</ulink></entry>
+				<entry>Fixed issue with regards to ConcurrentOperationException when attempting to deploy a new virtual machine.</entry>
+                            </row>
+
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11919">11919</ulink></entry>
+				<entry>Snapshots can now be taken on detached disk volumes.</entry>
+                            </row>
+
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11924">11924</ulink></entry>
+				<entry>listIsos and listTemplates API commands will no longer return deleted ISOs or templates.</entry>
+                            </row>
+
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11940">11940</ulink></entry>
+				<entry>vSphere: Can now deploy a new virtual machine with an attached data disk.</entry>
+                            </row>
+
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11961">11961</ulink></entry>
+				<entry>Template usage now accounts for multiple secondary storages.</entry>
+                            </row>
+
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11996">11996</ulink></entry>
+				<entry>Fixed a condition where the HostCapacityThread will terminate and capacities are no longer reported.</entry>
+                            </row>
+
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=12014">12014</ulink></entry>
+				<entry>Snapshots in Error state can now be deleted via the API.</entry>
+                            </row>
+
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=12041">12041</ulink></entry>
+				<entry>vSphere: Snapshots on data disks now work properly.</entry>
+                            </row>
+                            
                         </tbody>
                         </tgroup>
                 </table>
@@ -28,9 +196,9 @@
 	</section>
 
         <section>
-                <title>New features in &PRODUCT; 2.2.6</title>
-                <table id="tb-226newfeat" frame="all">
-                        <title>New features in 2.2.6</title>
+                <title>New features in &PRODUCT; 2.2.13</title>
+                <table id="tb-2213newfeat" frame="all">
+                        <title>New features in 2.2.13</title>
                         <tgroup cols='2' align='left' colsep='1' rowsep='1'>
                             <colspec colnum="1" colwidth="1*"/>
                             <colspec colnum="2" colwidth="2*"/>
@@ -42,8 +210,28 @@
                         </thead>
                         <tbody>
                             <row>
-                                <entry>somebugnumber</entry>
-                                <entry>description of bug</entry>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11302">11302</ulink></entry>
+				<entry>Support for XenServer SP2 + CSP (Cloud Supplemental Pack)</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11634">11634</ulink></entry>
+				<entry>KVM: Ability for admin to live migrate VM from one host to another is now supported.</entry>
+                            </row>
+                            <row>
+				<entry>Many</entry>
+				<entry>OVM: OVM 2.3 is now an officially supported hypervisor.</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11675">11675</ulink></entry>
+				<entry>XCP (Beta Support): XCP 1.1 is now recognized as a hypervisor.</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11800">11800</ulink></entry>
+				<entry>Cloudstack supports upgrading XenServer from 5.6 to FP1 or SP2. Please refer to the upgrade instructions.</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11808">11808</ulink></entry>
+				<entry>Non-default Virtual Guest Network can now be created via the CreateNetwork API.</entry>
                             </row>
                         </tbody>
                         </tgroup>
