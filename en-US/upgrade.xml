@@ -26,7 +26,7 @@
 				<screen><prompt># </prompt><userinput>mysqldump cloud_usage > cloud_usage_backup.dmp</userinput></screen>
 			</listitem>
 			<listitem>
-				<para>Due to the merge of the formerly-proprietary codebase into F/LOSS, you'll need to connect to the mysql cloud database and make a manual update</para>
+				<para>If you are upgrading from a version prior to 2.2.12, you'll need to follow this step - otherwise skip ahead to the next step. Due to the merge of the formerly-proprietary codebase into F/LOSS, you'll need to connect to the mysql cloud database and make a manual update</para>
 				<screen><prompt>mysql> </prompt><userinput>UPDATE networks SET guru_name='ExternalGuestNetworkGuru' WHERE guru_name='GuestNetworkGuru';</userinput></screen>
 				<screen><prompt>mysql> </prompt><userinput>UPDATE nics SET reserver_name='ExternalGuestNetworkGuru' WHERE reserver_name='GuestNetworkGuru';</userinput></screen>
 				<important><para>Failure to complete this step will result in the software routers failing to restart properly.</para></important>
@@ -48,7 +48,7 @@
 			</listitem>
 			<listitem>
 				<para> Restart the usage server</para>
-				<note><para>The usage server is newly included as F/LOSS 2.2.12, so it would need to be installed for the following step to be necessary.</para></note>
+				<note><para>The usage server is newly included in F/LOSS as of 2.2.12, so it would need to be installed for the following step to be necessary.</para></note>
 				<screen><prompt># </prompt><userinput>service cloud-usage start</userinput></screen>
 			</listitem>
 		</orderedlist>
@@ -78,6 +78,12 @@
 				</listitem>
 			</orderedlist>
 		</section>
+                <section>
+                    <title>Restart SystemVMs</title>
+                    <para>You'll need to start and stop all system VMs (routers, secondary storage, and console proxy VMs.) You can either do this manually, or if you have a number of machines - there is a script included to do so automatically. You'll need to know the IP address of the mysql instance, the database username, and the password for that user.</para>
+                   <para>For example:</para>
+                   <screen><prompt># </prompt><userinput>nohup cloud-sysvmadm -d 192.168.1.5 -u cloud -p password </userinput></screen>
+                </section>
 		<section>
 			<title>Special steps for Ubuntu management servers</title>
 			<para>In CloudStack 2.2.7 <ulink url="http://bugs.cloud.com/show_bug.cgi?id=10343">bug 10343</ulink>

@@ -26,11 +26,11 @@
                                 <entry>Many</entry>
                                 <entry>When using the OVM hypervisor the following functionality is not yet supported:
                                     <orderedlist>
-                                        <listitem>Snapshots</listitem>
-                                        <listitem>System VMs must run on XenServer/KVM/VMware, not OVM</listitem>
-                                        <listitem>Security Groups on Basic Networking</listitem>
-                                        <listitem>Network Throttling</listitem>
-                                        <listitem>FibreChannel on primary storage</listitem>
+                                        <listitem><para>Snapshots</para></listitem>
+                                        <listitem><para>System VMs must run on XenServer/KVM/VMware, not OVM</para></listitem>
+                                        <listitem><para>Security Groups on Basic Networking</para></listitem>
+                                        <listitem><para>Network Throttling</para></listitem>
+                                        <listitem><para>FibreChannel on primary storage</para></listitem>
                                     </orderedlist>
                                 </entry>
                             </row>
