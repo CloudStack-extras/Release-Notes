@@ -15,6 +15,53 @@
                         </thead>
                         <tbody>
                             <row>
+                                <entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11955">11955</ulink></entry>
+                                <entry>Ubuntu 10.04 PV and HVM do not work properly after SP2 upgrade.</entry>
+                            </row>
+                            <row>
+                                <entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11955">11955</ulink></entry>
+                                <entry>CentOS 5.5 HVM with either “Other Linux 64-bit” or “Centos 5.5 64-bit” as the guest OS support does not work properly after SP2 upgrade.</entry>
+                            </row>
+                            <row>
+                                <entry>Many</entry>
+                                <entry>When using the OVM hypervisor the following functionality is not yet supported:
+                                    <orderedlist>
+                                        <listitem>Snapshots</listitem>
+                                        <listitem>System VMs must run on XenServer/KVM/VMware, not OVM</listitem>
+                                        <listitem>Security Groups on Basic Networking</listitem>
+                                        <listitem>Network Throttling</listitem>
+                                        <listitem>FibreChannel on primary storage</listitem>
+                                    </orderedlist>
+                                </entry>
+                            </row>
+                            <row>
+                                <entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11477">11477</ulink></entry>
+                                <entry>CloudStack does not properly clean up VDI when VMs failed to be deployed properly.</entry>
+                            </row>
+
+                            <row>
+                                <entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=8105">8105</ulink></entry>
+                                <entry>KVM: NFS v4 for primary storage may not work. Use v3.</entry>
+                            </row>
+
+				<row>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=8486">8486</ulink></entry>
+					<entry>XenServer: putting a host into maintenance mode will fail if some guests do not have PV drivers.</entry>
+				</row>
+				<row>
+					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=5573">5573</ulink></entry>
+					<entry>KVM: editing the name of a Pod will revent VMs from starting.</entry>
+				</row>
+				<row>
+					<entry>many</entry>
+					<entry>The internationalization feature of the CloudStack is immature. Some strings have not been extracted and will still render in English.</entry>
+				</row>
+                                <row>
+                                    <entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=7145">7145</ulink>,
+                                            <ulink url="http://bugs.cloud.com/show_bug.cgi?id=9912">9912</ulink></entry>
+                                    <entry>Basic mode networking: if the Secondary Storage VM's private and public IP ranges are in the same subnet the SSVM will not function properly.</entry>
+                                </row>
+                            <row>
                                 <entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11397">11397</ulink></entry>
                                 <entry>Creating template from volume isn't using the latest state of the volume</entry>
                             </row>
