@@ -2,9 +2,10 @@
 <!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" >
 <section>
 	<title>&PRODUCT; 2.2.14</title>
-	<para>&PRODUCT; 2.2.14 was released on 16 June 2011</para>
+	<para>&PRODUCT; 2.2.14 was released on 13 February 2012</para>
 	<section>
 		<title>Issues fixed in &PRODUCT; 2.2.14</title>
+                <para>The following table lists issues of interest that have been fixed in this version. This is not an exhaustive list of every bug fixed. </para>
 		<table id="tb-2214fixed" frame="all">
                         <title>Issues fixed in 2.2.14</title>
 			<tgroup cols='2' align='left' colsep='1' rowsep='1'>
@@ -15,16 +16,171 @@
 					<entry>Bug</entry>
 					<entry>Description</entry>
 				</row>
-			</thead>
+                       </thead>
 			<tbody>
                             <row>
-				<entry>somebugnumber</entry>
-				<entry>description of bug</entry>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11319">11319</ulink></entry>
+				<entry>Refactored keyboard handling across guest OS, console proxy and console viewer</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11682">11682</ulink></entry>
+				<entry>KVM hosts now remain connected after management server restart</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11780">11780</ulink></entry>
+				<entry>Fixed issue with conflicting mail libraries so that emailed alerts work properly</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11860">11860</ulink></entry>
+				<entry>F5 network device can provide network usage data for larger total bytes sent</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11931">11931</ulink></entry>
+				<entry>Can create volume from snapshot of data volume with spaces in its name</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=12001">12001</ulink></entry>
+				<entry>Resource limits can now be set to a particular number and then reset back to -1</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=12005">12005</ulink></entry>
+				<entry>XCP host no longer disconnects after restarting CloudStack</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=12292">12292</ulink></entry>
+				<entry>Fresh installation and upgrades both have the correct values for netapp_volume primary key</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=12436">12436</ulink></entry>
+				<entry>Added new global configuration parameter external.network.stats.interval so virtual routers and external network devices (such as Juniper SRX) can have different settings for how frequently usage data is gathered</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=12496">12496</ulink></entry>
+				<entry>Guest VMs can access the virtual router’s load balancing service</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=12605">12605</ulink></entry>
+				<entry>KVM node in maintenance mode will no longer try to connect to the management server</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=12606">12606</ulink></entry>
+				<entry>Can add a firewall rule whose ICMP type/ICMP code is identical with a previous rule</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=12616">12616</ulink></entry>
+				<entry>Increased number of KVM host connection requests that the management server can handle without timing out</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=12618">12618</ulink></entry>
+				<entry>Optimized processing of usage data requests on Juniper SRX device</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=12649">12649</ulink></entry>
+				<entry>Show full domain path when creating accounts or domains</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=12704">12704</ulink></entry>
+				<entry>On VMware: multiple public NICs in redundant router working</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=12711">12711</ulink></entry>
+				<entry>On VMware, can add NFS Secondary Storage and it will not be incorrectly discovered as local storage when use.local.storage is enabled</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=12718">12718</ulink></entry>
+				<entry>Optimization of listSecurityGroup API to handle larger numbers of security groups more efficiently</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=12720">12720</ulink></entry>
+				<entry>Deleted snapshots are now properly removed from secondary storage</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=12740">12740</ulink></entry>
+				<entry>Only root administrators and the system user are allowed to bypass ACL checking</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=12790">12790</ulink></entry>
+				<entry>Ping timeout error no longer occurs when a host is automatically moved from one management server to another</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=12850">12850</ulink></entry>
+				<entry>Accounts in child domains can create VMs in zones owned by their parent domain</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=12854">12854</ulink></entry>
+				<entry>Improved security to defend against ARP spoofing between VMs</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=12860">12860</ulink></entry>
+				<entry>Snapshot cleanup process for removed snapshots now works properly</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=12897">12897</ulink></entry>
+				<entry>Improved robustness of API call updateHostPassword and restricted it to only XenServer hosts</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=12938">12938</ulink></entry>
+				<entry>Improved security to defend against attacks originating in the VM</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=12952">12952</ulink></entry>
+				<entry>Can view security groups tab on a running instance in Internet Explorer browser</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=12957">12957</ulink></entry>
+				<entry>VM instances boot properly after deleting an existing data disk</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=12973">12973</ulink></entry>
+				<entry>On Xen 5.6SP2 and 6.0 hosts, ingress/egress rules using ICMP protocol no longer cause host plugin failure</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=12985">12985</ulink></entry>
+				<entry>Correct state of VM is now reported when Windows VM goes through sysprep upon reboot</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=12994">12994</ulink></entry>
+				<entry>Volume creation from snapshot on VMware works</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=13027">13027</ulink></entry>
+				<entry>Only ISOs that have successfully and completely downloaded will be available for creating new instances</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=13082">13082</ulink></entry>
+				<entry>Socket timeout exception no longer causes delay in retry of port forwarding rule</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=13091">13091</ulink></entry>
+				<entry>In KVM, data disks can now be included when creating VMs and will work properly</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=13145">13145</ulink></entry>
+				<entry>Updated userdata is propagated to software router without having to reboot the router</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=13319">13319</ulink></entry>
+				<entry>Fixed UI rendering issues that displayed incorrect data when configuring client VPN</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=13375">13375</ulink></entry>
+				<entry>Can acquire or release additional IP addresses without erroneously changing static NAT IP of existing IP addresses</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=13416">13416</ulink></entry>
+				<entry>Can cancel Maintenance Mode on a KVM host and the host will reconnect</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=13418">13418</ulink></entry>
+				<entry>Resource limit on number of allowed volumes is checked during VM creation to ensure additional volumes above the limit are not created</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=13425">13425</ulink></entry>
+				<entry>listSecurityGroups API call with pagesize returns security groups properly</entry>
                             </row>
                         </tbody>
                         </tgroup>
                 </table>
-		<para>foo</para>
 	</section>
 
         <section>
@@ -42,13 +198,16 @@
                         </thead>
                         <tbody>
                             <row>
-                                <entry>somebugnumber</entry>
-                                <entry>description of bug</entry>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=13138">13138</ulink></entry>
+				<entry>Community-contributed French language support in the UI</entry>
+                            </row>
+                            <row>
+				<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=13139">13139</ulink></entry>
+				<entry>Community-contributed Portuguese language support in the UI</entry>
                             </row>
                         </tbody>
                         </tgroup>
                 </table>
-                <para>foo</para>
         </section>
 
 
