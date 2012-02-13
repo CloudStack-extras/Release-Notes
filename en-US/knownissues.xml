@@ -1,116 +1,152 @@
 <?xml version='1.0' encoding='utf-8' ?>
 <!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" >
 <section id="sect-knownissues">
-	<title>Known Issues</title>
-        <table id="tb-knownissues" frame="all">
-                        <title>Known issues</title>
-                        <tgroup cols='2' align='left' colsep='1' rowsep='1'>
-                            <colspec colnum="1" colwidth="1*"/>
-                            <colspec colnum="2" colwidth="2*"/>
-                        <thead>
-                                <row>
-                                        <entry>Bug</entry>
-                                        <entry>Description</entry>
-                                </row>
-                        </thead>
-                        <tbody>
-                            <row>
-                                <entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11955">11955</ulink></entry>
-                                <entry>Ubuntu 10.04 PV and HVM do not work properly after SP2 upgrade.</entry>
-                            </row>
-                            <row>
-                                <entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11955">11955</ulink></entry>
-                                <entry>CentOS 5.5 HVM with either “Other Linux 64-bit” or “Centos 5.5 64-bit” as the guest OS support does not work properly after SP2 upgrade.</entry>
-                            </row>
-                            <row>
-                                <entry>Many</entry>
-                                <entry>When using the OVM hypervisor the following functionality is not yet supported:
-                                    <orderedlist>
-                                        <listitem>Snapshots</listitem>
-                                        <listitem>System VMs must run on XenServer/KVM/VMware, not OVM</listitem>
-                                        <listitem>Security Groups on Basic Networking</listitem>
-                                        <listitem>Network Throttling</listitem>
-                                        <listitem>FibreChannel on primary storage</listitem>
-                                    </orderedlist>
-                                </entry>
-                            </row>
-                            <row>
-                                <entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11477">11477</ulink></entry>
-                                <entry>CloudStack does not properly clean up VDI when VMs failed to be deployed properly.</entry>
-                            </row>
+    <title>Known Issues</title>
+    <table id="tb-knownissues" frame="all">
+        <title>Known issues</title>
+        <tgroup cols='2' align='left' colsep='1' rowsep='1'>
+            <colspec colnum="1" colwidth="1*"/>
+            <colspec colnum="2" colwidth="2*"/>
+            <thead>
+                <row>
+                    <entry>Bug</entry>
+                    <entry>Description</entry>
+                </row>
+            </thead>
+            <tbody>
+                <row>
+                    <entry>
+                        <ulink url="http://bugs.cloud.com/show_bug.cgi?id=11955">11955</ulink>
+                    </entry>
+                    <entry>Ubuntu 10.04 PV and HVM do not work properly after SP2 upgrade.</entry>
+                </row>
+                <row>
+                    <entry>
+                        <ulink url="http://bugs.cloud.com/show_bug.cgi?id=11955">11955</ulink>
+                    </entry>
+                    <entry>CentOS 5.5 HVM with either “Other Linux 64-bit” or “Centos 5.5 64-bit” as the guest OS support does not work properly after SP2 upgrade.</entry>
+                </row>
+                <row>
+                    <entry>Many</entry>
+                    <entry>When using the OVM hypervisor the following functionality is not yet supported:
+                        <orderedlist>
+                            <listitem>Snapshots</listitem>
+                            <listitem>System VMs must run on XenServer/KVM/VMware, not OVM</listitem>
+                            <listitem>Security Groups on Basic Networking</listitem>
+                            <listitem>Network Throttling</listitem>
+                            <listitem>FibreChannel on primary storage</listitem>
+                        </orderedlist>
+                    </entry>
+                </row>
+                <row>
+                    <entry>
+                        <ulink url="http://bugs.cloud.com/show_bug.cgi?id=11477">11477</ulink>
+                    </entry>
+                    <entry>CloudStack does not properly clean up VDI when VMs failed to be deployed properly.</entry>
+                </row>
 
-                            <row>
-                                <entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=8105">8105</ulink></entry>
-                                <entry>KVM: NFS v4 for primary storage may not work. Use v3.</entry>
-                            </row>
+                <row>
+                    <entry>
+                        <ulink url="http://bugs.cloud.com/show_bug.cgi?id=8105">8105</ulink>
+                    </entry>
+                    <entry>KVM: NFS v4 for primary storage may not work. Use v3.</entry>
+                </row>
 
-				<row>
-					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=8486">8486</ulink></entry>
-					<entry>XenServer: putting a host into maintenance mode will fail if some guests do not have PV drivers.</entry>
-				</row>
-				<row>
-					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=5573">5573</ulink></entry>
-					<entry>KVM: editing the name of a Pod will revent VMs from starting.</entry>
-				</row>
-				<row>
-					<entry>many</entry>
-					<entry>The internationalization feature of the CloudStack is immature. Some strings have not been extracted and will still render in English.</entry>
-				</row>
-                                <row>
-                                    <entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=7145">7145</ulink>,
-                                            <ulink url="http://bugs.cloud.com/show_bug.cgi?id=9912">9912</ulink></entry>
-                                    <entry>Basic mode networking: if the Secondary Storage VM's private and public IP ranges are in the same subnet the SSVM will not function properly.</entry>
-                                </row>
-                            <row>
-                                <entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=11397">11397</ulink></entry>
-                                <entry>Creating template from volume isn't using the latest state of the volume</entry>
-                            </row>
-                            <row>
-                                <entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=12061">12061</ulink></entry>
-                                <entry>Snapshot stuck in backingUp state on MS restart, not allowing further snapshots.</entry>
-                            </row>
-                            <row>
-                                <entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=12382">12382</ulink></entry>
-                                <entry>Secondary storage removed and re-added but snapshots table not updated</entry>
-                            </row>
+                <row>
+                    <entry>
+                        <ulink url="http://bugs.cloud.com/show_bug.cgi?id=8486">8486</ulink>
+                    </entry>
+                    <entry>XenServer: putting a host into maintenance mode will fail if some guests do not have PV drivers.</entry>
+                </row>
+                <row>
+                    <entry>
+                        <ulink url="http://bugs.cloud.com/show_bug.cgi?id=5573">5573</ulink>
+                    </entry>
+                    <entry>KVM: editing the name of a Pod will revent VMs from starting.</entry>
+                </row>
+                <row>
+                    <entry>many</entry>
+                    <entry>The internationalization feature of the CloudStack is immature. Some strings have not been extracted and will still render in English.</entry>
+                </row>
+                <row>
+                    <entry>
+                        <ulink url="http://bugs.cloud.com/show_bug.cgi?id=7145">7145</ulink>,
+                        <ulink url="http://bugs.cloud.com/show_bug.cgi?id=9912">9912</ulink>
+                    </entry>
+                    <entry>Basic mode networking: if the Secondary Storage VM's private and public IP ranges are in the same subnet the SSVM will not function properly.</entry>
+                </row>
+                <row>
+                    <entry>
+                        <ulink url="http://bugs.cloud.com/show_bug.cgi?id=11397">11397</ulink>
+                    </entry>
+                    <entry>Creating template from volume isn't using the latest state of the volume</entry>
+                </row>
+                <row>
+                    <entry>
+                        <ulink url="http://bugs.cloud.com/show_bug.cgi?id=12061">12061</ulink>
+                    </entry>
+                    <entry>Snapshot stuck in backingUp state on MS restart, not allowing further snapshots.</entry>
+                </row>
+                <row>
+                    <entry>
+                        <ulink url="http://bugs.cloud.com/show_bug.cgi?id=12382">12382</ulink>
+                    </entry>
+                    <entry>Secondary storage removed and re-added but snapshots table not updated</entry>
+                </row>
 
-                            <row>
-                                <entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=12961">12961</ulink></entry>
-                                <entry>Instance deployment and Template 'creation from volume' fails if a host in an VMware cluster has an expired license</entry>
-                            </row>
+                <row>
+                    <entry>
+                        <ulink url="http://bugs.cloud.com/show_bug.cgi?id=12961">12961</ulink>
+                    </entry>
+                    <entry>Instance deployment and Template 'creation from volume' fails if a host in an VMware cluster has an expired license</entry>
+                </row>
 
-				<row>
-					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=13025">13025</ulink></entry>
-					<entry>Recurring snapshot of Root Disk and Data Disk of the same VM at the same Time fail for one volume (Vmware)</entry>
-				</row>
-				<row>
-					<entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=13122">13122</ulink></entry>
-					<entry>Management Server does not compute CPU Cap properly for XenServer</entry>
-				</row>
+                <row>
+                    <entry>
+                        <ulink url="http://bugs.cloud.com/show_bug.cgi?id=13025">13025</ulink>
+                    </entry>
+                    <entry>Recurring snapshot of Root Disk and Data Disk of the same VM at the same Time fail for one volume (Vmware)</entry>
+                </row>
+                <row>
+                    <entry>
+                        <ulink url="http://bugs.cloud.com/show_bug.cgi?id=13122">13122</ulink>
+                    </entry>
+                    <entry>Management Server does not compute CPU Cap properly for XenServer</entry>
+                </row>
 				
-                                <row>
-                                    <entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=13324">13324</ulink></entry>
-                                    <entry>XenServer Tools are not installed on System VM's as advertised by CloudStack Documentation</entry>
-                                </row>
-                                <row>
-                                    <entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=13404">13404</ulink></entry>
-                                    <entry>Password reset does not work if vm has more than one nic</entry>
-                                </row>
-                                <row>
-                                    <entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=13406">13406</ulink></entry>
-                                    <entry>Dashboard does not report storage usage correctly</entry>
-                                </row>
-                                <row>
-                                    <entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=13457">13457</ulink></entry>
-                                    <entry>Account manager is not cleaning up resources deleted before restart of management server</entry>
-                                </row>
-                                <row>
-                                    <entry><ulink url="http://bugs.cloud.com/show_bug.cgi?id=13535">13535</ulink></entry>
-                                    <entry>Deletion of Host does not result in the Local Storage being deleted.Manual deletion of local storage also fails.</entry>
-                                </row>
-			</tbody>
-		</tgroup>
-	</table>
+                <row>
+                    <entry>
+                        <ulink url="http://bugs.cloud.com/show_bug.cgi?id=13324">13324</ulink>
+                    </entry>
+                    <entry>XenServer Tools are not installed on System VM's as advertised by CloudStack Documentation</entry>
+                </row>
+                <row>
+                    <entry>
+                        <ulink url="http://bugs.cloud.com/show_bug.cgi?id=13404">13404</ulink>
+                    </entry>
+                    <entry>Password reset does not work if vm has more than one nic</entry>
+                </row>
+                <row>
+                    <entry>
+                        <ulink url="http://bugs.cloud.com/show_bug.cgi?id=13406">13406</ulink>
+                    </entry>
+                    <entry>Dashboard does not report storage usage correctly</entry>
+                </row>
+                <row>
+                    <entry>
+                        <ulink url="http://bugs.cloud.com/show_bug.cgi?id=13457">13457</ulink>
+                    </entry>
+                    <entry>Account manager is not cleaning up resources deleted before restart of management server</entry>
+                </row>
+                <row>
+                    <entry>
+                        <ulink url="http://bugs.cloud.com/show_bug.cgi?id=13535">13535</ulink>
+                    </entry>
+                    <entry>Deletion of Host does not result in the Local Storage being deleted.Manual deletion of local storage also fails.</entry>
+                </row>
+            </tbody>
+        </tgroup>
+    </table>
 
 
 </section>
